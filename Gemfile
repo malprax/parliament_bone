@@ -9,9 +9,10 @@ gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'compass-rails', '~> 2.0.4' #to prevent error sprockets
 
 #bootstrap
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass' , '~> 3.3.5'
 gem 'autoprefixer-rails'
 
 #add paginate

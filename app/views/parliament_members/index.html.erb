@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Parliament Members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parliament_members.each do |parliament_member| %>
+      <tr>
+        <td><%= parliament_member.name %></td>
+        <td><%= link_to 'Show', parliament_member %></td>
+        <td><%= link_to 'Edit', edit_parliament_member_path(parliament_member) %></td>
+        <td><%= link_to 'Destroy', parliament_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parliament member', new_parliament_member_path %>

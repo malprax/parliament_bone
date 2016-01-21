@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <% cache do %>
+      <%= link_to 'DPRD Bone', '#', class: 'navbar-brand hidden-xs hidden-sm', scale: 0.5 %>
+    <% end %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right " id="nav">
+
+        <li><%= link_to "Beranda", root_url %></li>
+        <li><%= link_to "Wakil Rakyat", "#" %></li>
+        <li><%= link_to "Berita", "#" %></li>
+        <li><%= link_to "Profil", "#" %></li>
+        <li><%= link_to "Alat Dan Kelengkapan", "#" %></li>
+        <li><%= link_to "Produk Hukum", "#"  %></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
