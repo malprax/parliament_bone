@@ -13,7 +13,6 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require bootstrap
 //= require jquery_nested_form
 //= require chosen-jquery
 //= require jquery-ui

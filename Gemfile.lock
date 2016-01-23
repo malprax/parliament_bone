@@ -444,7 +444,7 @@ DEPENDENCIES
   better_errors (~> 1.0.1)
   binding_of_caller (~> 0.7.2)
   bootstrap-datepicker-rails
-  bootstrap-sass (~> 3.3.5)
+  bootstrap-sass (~> 3.3.6)
   bootstrap-wysihtml5-rails!
   bootstrap_form
   byebug
