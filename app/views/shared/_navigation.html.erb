@@ -8,9 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <% cache do %>
-      <%= link_to 'DPRD Bone', '#', class: 'navbar-brand hidden-xs hidden-sm', scale: 0.5 %>
-    <% end %>
+
+        <%= link_to root_url, class: 'navbar-brand' do %>
+          <%#= image_tag("logo_dprd.png") %>
+          <%= 'DPRD Bone' %>
+        <% end %>
+
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,7 +32,13 @@
             <li><%= link_to "Fraksi" %></li>
           </ul>
         </li>
-        <li><%= link_to "Info", "#" %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info<span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><%= link_to "Kegiatan", "#" %></li>
+            <li><%= link_to "Produk Hukum", '#' %></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Profil<span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -48,7 +58,6 @@
             <li><%= link_to "Badan Musyawarah" %></li>
           </ul>
         </li>
-        <li><%= link_to "Produk Hukum", "#"  %></li>
       </ul>
 
     </div><!-- /.navbar-collapse -->
