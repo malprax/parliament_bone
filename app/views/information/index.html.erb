@@ -1,32 +1,16 @@
 <div class="container">
   <div class="row">
-    <table class="table table-hover table-striped">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Content</th>
-          <th>Image</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
+    <% @information.each do |info| %>
+    <article>
+      <h3 class="lead"><%= info.title %></h3>
+      <p>Publikasi <%= info.created_at.strftime("%d-%m-%Y") %></p>
+      <p><%= raw(info.content) %></p>
+      <br>
+      <br>
+    </article>
 
-      <tbody>
-        <% @information.each do |information| %>
-          <tr>
-            <td><%= information.title %></td>
-            <td><%= information.content %></td>
-            <td><%= information.image %></td>
-            <td><%= link_to 'Show', information %></td>
-            <td><%= link_to 'Edit', edit_information_path(information) %></td>
-            <td><%= link_to 'Destroy', information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-
-    <br>
-
-    <%= link_to 'New Information', new_information_path, class: "btn btn-success" %>
-
+    <% end %>
+    <%= link_to 'Buat Berita', new_information_path, class: "btn btn-success" %>
+  </br>
   </div>
 </div>
