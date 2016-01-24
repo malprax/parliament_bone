@@ -1,0 +1,15 @@
+<%= simple_form_for(@comission) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, label: "Nama" %>
+    <%= f.input :code, label: "Kode" %>
+    <%= f.input :comment, label: "Keterangan" %>
+    <%= f.input :fraction_id, collection: (Fraction.order("created_at asc").map{|k|[k.name, k.id]}), label: "Anggota" %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

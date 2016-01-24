@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  #info
+  resources :information
+  get '/kegiatan' =>  'information#index', as: :kegiatan
+
+  # menu komisi
+  resources :comissions
+  get '/komisi_wakil_rakyat' => 'comissions#index', as: :komisi_wakil_rakyat
+
   # menu fraksi
   resources :fractions
   get '/fraksi_wakil_rakyat' => 'fractions#index', as: :fraksi_wakil_rakyat
