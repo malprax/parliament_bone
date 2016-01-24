@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  # menu fraksi
+  resources :fractions
+  get '/fraksi_wakil_rakyat' => 'fractions#index', as: :fraksi_wakil_rakyat
+
+  # menu wakil rakyat
+  resources :parliament_members
+  get '/anggota_wakil_rakyat' => 'parliament_members#index', as: :anggota_wakil_rakyat
+
   # menu tugas_dan_wewenang
   get '/alat_dan_kelengkapan' => 'boards#alat_dan_kelengkapan', as: :alat_dan_kelengkapan
   get '/panitia_khusus' => 'boards#panitia_khusus', as: :panitia_khusus
@@ -14,7 +22,7 @@ Rails.application.routes.draw do
   get '/hak_kewajiban' => 'profiles#hak_kewajiban', as: :hak_kewajiban
   get '/tugas_wewenang' => 'profiles#tugas_wewenang', as: :tugas_wewenang
 
-  resources :parliament_members
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

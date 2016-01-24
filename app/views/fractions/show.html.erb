@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <p>
+      <strong>Nama:</strong>
+      <%= @fraction.name %>
+    </p>
+
+    <p>
+      <strong>Anggota:</strong>
+      <%= @fraction.parliament_member_id %>
+    </p>
+
+    <p>
+      <strong>Jabatan:</strong>
+      <%= @fraction.jabatan %>
+    </p>
+
+    <%= link_to 'Edit', edit_fraction_path(@fraction) %> |
+    <%= link_to 'Back', fractions_path %>
+
+  </div>
+</div>

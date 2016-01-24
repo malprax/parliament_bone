@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <h3 class="lead">Daftar Fraksi</h3>
+
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th>Fraksi</th>
+          <th>Anggota</th>
+          <th>Jabatan</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @fractions.each do |fraction| %>
+          <tr>
+            <td><%= fraction.name %></td>
+            <td><%= fraction.parliament_member.name rescue nil %></td>
+            <td><%= fraction.jabatan rescue nil %></td>
+            <td><%= link_to 'Lihat', fraction %></td>
+            <td><%= link_to 'Edit', edit_fraction_path(fraction) %></td>
+            <td><%= link_to 'Hapus', fraction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'Buat Fraksi', new_fraction_path, class: "btn btn-success" %>
+
+  </div>
+</div>
