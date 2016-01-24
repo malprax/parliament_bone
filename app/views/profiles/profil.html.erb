@@ -1,2 +1,25 @@
-<h1>Profiles#profil</h1>
-<p>Find me in app/views/profiles/profil.html.erb</p>
+<section>
+  <div class="container">
+    <div class="row">
+      <ul class="nav nav-tabs">
+          <li role="presentation" class="active page-scroll"><a href="#sejarah">Sejarah</a></li>
+          <li role="presentation" class="page-scroll"><a href="#visi_misi">Visi Dan Misi</a></li>
+          <li role="presentation" class="page-scroll"><a href="#hak_kewajiban">Hak Dan Kewajiban</a></li>
+          <li role="presentation" class="page-scroll"><a href="#tugas_wewenang">Tugas Dan Wewenang</a></li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+<section id="sejarah">
+  <%= render 'sejarah' %>
+</section>
+<section id="visi_misi">
+  <%= render 'visi_misi' %>
+</section>
+<section id="hak_kewajiban">
+  <%= render 'hak_kewajiban' %>
+</section>
+<section id="tugas_wewenang">
+  <%= render 'tugas_wewenang' %>
+</section>

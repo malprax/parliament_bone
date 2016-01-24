@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'profiles/profil' => 'profiles#profil', as: :profil
-  get 'profiles/sejarah'
-  get 'profiles/visi_misi'
-  get 'profiles/hak_kewajiban'
-  get 'profiles/tugas_wewenang'
+  get '/profil' => 'profiles#profil', as: :profil
+  get '/sejarah' => 'profiles#sejarah', as: :sejarah
+  get '/visi_misi' => 'profiles#visi_misi', as: :visi_misi
+  get '/hak_kewajiban' => 'profiles#hak_kewajiban', as: :hak_kewajiban
+  get '/tugas_wewenang' => 'profiles#tugas_wewenang', as: :tugas_wewenang
 
   resources :parliament_members
   # The priority is based upon order of creation: first created -> highest priority.
