@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'profiles/profil' => 'profiles#profil', as: :profil
+  get 'profiles/sejarah'
+  get 'profiles/visi_misi'
+  get 'profiles/hak_kewajiban'
+  get 'profiles/tugas_wewenang'
+
   resources :parliament_members
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

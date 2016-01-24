@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
 
-        <%= link_to root_url, class: 'navbar-brand' do %>
+        <%= link_to root_url, class: 'navbar-brand ' do %>
           <%#= image_tag("logo_dprd.png") %>
           <%= 'DPRD Bone' %>
         <% end %>
@@ -42,10 +42,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Profil<span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><%= link_to "Sejarah", "#" %></li>
-            <li><%= link_to "Visi Misi", '#' %></li>
-            <li><%= link_to "Hak Dan Kewajiban" %></li>
-            <li><%= link_to "Tugas Dan Wewenang" %></li>
+            <li class: "page-scroll" ><%= link_to "Sejarah", profil_path  %></li>
+            <li class: "page-scroll" ><%= link_to "Visi Misi", "#visi_misi" %></li>
+            <li class: "page-scroll" ><%= link_to "Hak Dan Kewajiban", "#hak_kewajiban" %></li>
+            <li class: "page-scroll" ><%= link_to "Tugas Dan Wewenang", "#tugas_wewenang"%></li>
           </ul>
         </li>
         <li class="dropdown">
