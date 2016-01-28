@@ -1,10 +1,9 @@
-<%= simple_form_for(@fraction) do |f| %>
+<%= simple_form_for @fraction do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :name, label: "Nama"%>
-    <%= f.input :parliament_member_id, collection: (ParliamentMember.order("created_at asc").map{|k|[k.name, k.id]}), label: "Anggota" %>
-    <%= f.input :jabatan, label: "Jabatan" %>
+    <%= f.association :parliament_members, as: :check_boxes %>
   </div>
 
   <div class="form-actions">

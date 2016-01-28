@@ -1,5 +1,6 @@
 class ParliamentMembersController < ApplicationController
   before_action :set_parliament_member, only: [:show, :edit, :update, :destroy]
+  # before_action :set_fraction, only: [:new, :create, :edit, :update, :destroy ]
 
   # GET /parliament_members
   # GET /parliament_members.json
@@ -10,11 +11,12 @@ class ParliamentMembersController < ApplicationController
   # GET /parliament_members/1
   # GET /parliament_members/1.json
   def show
+    #  @fraction = Fraction.order('created_at desc')
   end
 
   # GET /parliament_members/new
   def new
-    @parliament_member = ParliamentMember.new
+    @parliament_member = @fraction.parliament_members.build
   end
 
   # GET /parliament_members/1/edit
@@ -24,6 +26,7 @@ class ParliamentMembersController < ApplicationController
   # POST /parliament_members
   # POST /parliament_members.json
   def create
+    # @parliament_member = @fraction.parliament_members.create(parliament_member_params)
     @parliament_member = ParliamentMember.new(parliament_member_params)
 
     respond_to do |format|
@@ -63,12 +66,17 @@ class ParliamentMembersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    # def set_fraction
+    #   @fraction = Fraction.find(params[:fraction_id])
+    # end
+
     def set_parliament_member
       @parliament_member = ParliamentMember.find(params[:id])
+      @parliament_members = ParliamentMember.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def parliament_member_params
-      params.require(:parliament_member).permit(:name)
+      params.require(:parliament_member).permit(:name, :fraction_ids => [] )
     end
 end

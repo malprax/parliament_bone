@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   # menu fraksi
   resources :fractions
+  # do
+  #   resources :parliament_members
+  # end
   get '/fraksi_wakil_rakyat' => 'fractions#index', as: :fraksi_wakil_rakyat
 
   # menu wakil rakyat

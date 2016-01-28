@@ -4,17 +4,11 @@
       <strong>Nama:</strong>
       <%= @fraction.name %>
     </p>
-
-    <p>
-      <strong>Anggota:</strong>
-      <%= @fraction.parliament_member.name %>
-    </p>
-
-    <p>
-      <strong>Jabatan:</strong>
-      <%= @fraction.jabatan %>
-    </p>
-
+    <%#= link_to "Tambah Anggota", new_fraction_parliament_member_path(@fraction) %>
+    <strong>Anggota:</strong>
+    <%= @fraction.parliament_members.map{|f| f.name }.join(', ') %>
+    <br>
+    <br>
     <%= link_to 'Edit', edit_fraction_path(@fraction) %> |
     <%= link_to 'Back', fractions_path %>
 

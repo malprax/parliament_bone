@@ -1,6 +1,6 @@
 class ComissionsController < ApplicationController
   before_action :set_comission, only: [:show, :edit, :update, :destroy]
-  before_action :set_parliament_member, only: [:new, :create, :edit, :update, :destroy]
+  
 
   # GET /comissions
   # GET /comissions.json
@@ -16,7 +16,7 @@ class ComissionsController < ApplicationController
 
   # GET /comissions/new
   def new
-    @comission = @parliament_member.comissions.build
+
   end
 
   # GET /comissions/1/edit
@@ -26,8 +26,8 @@ class ComissionsController < ApplicationController
   # POST /comissions
   # POST /comissions.json
   def create
-    @comission = @parliament_member.comissions.create(comission_params)
-    # @comission = Comission.new(comission_params)
+    # @comission = @parliament_member.comissions.create(comission_params)
+    @comission = Comission.new(comission_params)
 
     respond_to do |format|
       if @comission.save
@@ -71,10 +71,7 @@ class ComissionsController < ApplicationController
       @comission = Comission.find(params[:id])
     end
 
-    def set_parliament_member
-      @parliament_member = ParliamentMember.find(params[:parliament_member_id])
-      # @comission = Comission.find(params[:id])
-    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comission_params
