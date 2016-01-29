@@ -6,6 +6,8 @@
       <thead>
         <tr>
           <th>Nama</th>
+          <th>Fraksi</th>
+          <th>Dapil</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -14,6 +16,8 @@
         <% @parliament_members.each do |parliament_member| %>
           <tr>
             <td><%= parliament_member.name %></td>
+            <td><%= parliament_member.fraksi %></td>
+            <td><%= parliament_member.dapil %></td>
             <td><%= link_to 'Lihat', parliament_member %></td>
             <td><%= link_to 'Edit', edit_parliament_member_path(parliament_member) %></td>
             <td><%= link_to 'Hapus', parliament_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>

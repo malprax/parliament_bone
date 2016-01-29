@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :levels
   #info
   resources :information
   get '/kegiatan' =>  'information#index', as: :kegiatan
