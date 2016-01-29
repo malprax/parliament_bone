@@ -1,6 +1,9 @@
-<h1>Editing Level</h1>
+<div class="container">
+  <div class="row">
+    <h3 class="lead">Edit Pangkat</h3>
+    <%= render 'form' %>
+    <%= link_to 'Show', @level %> |
+    <%= link_to 'Back', levels_path %>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @level %> |
-<%= link_to 'Back', levels_path %>
+  </div>
+</div>

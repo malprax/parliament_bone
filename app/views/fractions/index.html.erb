@@ -2,37 +2,15 @@
   <div class="row">
     <h3 class="lead">Daftar Fraksi</h3>
     <% @fractions.each do |fraction| %>
+    <h4><%= fraction.parliament_member.fraksi.titleize rescue nil %></h4>
+    <p>Organisasi</p>
+    <p><%= fraction.level.name.titleize %>&nbsp;&nbsp;:&nbsp;&nbsp;<%= fraction.parliament_member.name %></p>
     <p>
-      <%= fraction.name.titleize rescue nil %>
       <%= link_to 'Edit', edit_fraction_path(fraction) %>
       <%= link_to 'Hapus', fraction, method: :delete, data: { confirm: 'Are you sure?' } %>
     </p>
-    <table class="table table-hover table-striped">
-      <thead>
-        <tr>
-          <th>
-             Anggota
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-      <% fraction.parliament_members.each do |g| %>
-      <tr>
-        <td>
-          <%= g.name %>
-        </td>
-      </tr>
-      <% end %>
-      </tbody>
-
-    </table>
-
     <% end %>
-
-  
     <br>
-
-    <%= link_to 'Buat Fraksi', new_fraction_path, class: "btn btn-success" %>
-
+    <%= link_to 'Buat Organisasi Fraksi', new_fraction_path, class: "btn btn-success" %>
   </div>
 </div>

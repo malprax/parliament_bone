@@ -28,7 +28,7 @@ class LevelsController < ApplicationController
 
     respond_to do |format|
       if @level.save
-        format.html { redirect_to @level, notice: 'Level was successfully created.' }
+        format.html { redirect_to levels_path, notice: 'Level was successfully created.' }
         format.json { render :show, status: :created, location: @level }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class LevelsController < ApplicationController
   def update
     respond_to do |format|
       if @level.update(level_params)
-        format.html { redirect_to @level, notice: 'Level was successfully updated.' }
+        format.html { redirect_to levels_path, notice: 'Level was successfully updated.' }
         format.json { render :show, status: :ok, location: @level }
       else
         format.html { render :edit }

@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 20160129101353) do
   end
 
   create_table "fractions", force: :cascade do |t|
-    t.string   "name"
     t.integer  "level_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "parliament_member_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "fractions_parliament_members", id: false, force: :cascade do |t|
