@@ -4,7 +4,8 @@ class FractionsController < ApplicationController
   # GET /fractions
   # GET /fractions.json
   def index
-    @fractions = Fraction.all
+    @fractions = Fraction.order('created_at desc')
+    
   end
 
   # GET /fractions/1

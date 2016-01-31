@@ -5,7 +5,8 @@ class ParliamentMembersController < ApplicationController
   # GET /parliament_members
   # GET /parliament_members.json
   def index
-    @parliament_members = ParliamentMember.all
+    @parliament_members = ParliamentMember.order('created_at desc')
+    @parliament_group = @parliament_members.group_by{|grup| grup.fraksi}
   end
 
   # GET /parliament_members/1
@@ -16,7 +17,7 @@ class ParliamentMembersController < ApplicationController
 
   # GET /parliament_members/new
   def new
-    @parliament_member = @fraction.parliament_members.build
+    @parliament_member = ParliamentMember.new
   end
 
   # GET /parliament_members/1/edit
@@ -72,7 +73,6 @@ class ParliamentMembersController < ApplicationController
 
     def set_parliament_member
       @parliament_member = ParliamentMember.find(params[:id])
-      @parliament_members = ParliamentMember.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

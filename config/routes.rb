@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # do
   #   resources :parliament_members
   # end
-  get '/fraksi_wakil_rakyat' => 'fractions#index', as: :fraksi_wakil_rakyat
+  get '/fraksi_wakil_rakyat' => 'organize_fractions#index', as: :fraksi_wakil_rakyat
 
   # menu wakil rakyat
   resources :parliament_members

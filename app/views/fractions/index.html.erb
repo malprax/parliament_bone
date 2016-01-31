@@ -3,7 +3,7 @@
     <h3 class="lead">Daftar Fraksi</h3>
     <% @fractions.each do |fraction| %>
     <h4><%= fraction.parliament_member.fraksi.titleize rescue nil %></h4>
-    <p>Organisasi</p>
+    <p>Struktur Organisasi</p>
     <p><%= fraction.level.name.titleize %>&nbsp;&nbsp;:&nbsp;&nbsp;<%= fraction.parliament_member.name %></p>
     <p>
       <%= link_to 'Edit', edit_fraction_path(fraction) %>
