@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :organize_fractions
   resources :levels
   #info
   resources :information

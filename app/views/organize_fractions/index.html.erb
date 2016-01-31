@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Organize Fractions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @organize_fractions.each do |organize_fraction| %>
+      <tr>
+        <td><%= organize_fraction.name %></td>
+        <td><%= link_to 'Show', organize_fraction %></td>
+        <td><%= link_to 'Edit', edit_organize_fraction_path(organize_fraction) %></td>
+        <td><%= link_to 'Destroy', organize_fraction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Organize fraction', new_organize_fraction_path %>
