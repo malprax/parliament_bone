@@ -4,14 +4,15 @@ class FractionsController < ApplicationController
   # GET /fractions
   # GET /fractions.json
   def index
-    @fractions = Fraction.order('created_at desc')
-    
+    @fractions = Fraction.order('priority desc')
+    @fraction_level = @fractions.group_by{|grup_fraksi| grup_fraksi.parliament_member.fraksi}
+
   end
 
   # GET /fractions/1
   # GET /fractions/1.json
   def show
-    @parliament_members = ParliamentMember.order('created_at desc')
+    # @parliament_members = ParliamentMember.order('created_at desc')
   end
 
   # GET /fractions/new
@@ -77,6 +78,6 @@ class FractionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fraction_params
-      params.require(:fraction).permit(:name, :level_id, :parliament_member_id)
+      params.require(:fraction).permit(:level_id, :parliament_member_id, :priority)
     end
 end

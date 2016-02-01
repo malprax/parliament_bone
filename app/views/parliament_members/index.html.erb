@@ -7,6 +7,7 @@
         <% parliament.each do |p| %>
           <li>
             <%= p.name %>
+            <%= link_to "edit", edit_parliament_member_path(p) %>
           </li>
         <% end %>
       </ul>

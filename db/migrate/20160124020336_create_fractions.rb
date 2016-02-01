@@ -4,7 +4,7 @@ class CreateFractions < ActiveRecord::Migration
       t.integer :level_id
       t.integer :parliament_member_id
       # t.string :jabatan
-      # t.integer :priority
+      t.integer :priority
 
       t.timestamps null: false
     end
