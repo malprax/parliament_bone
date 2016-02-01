@@ -1,11 +1,11 @@
 class ComissionsController < ApplicationController
   before_action :set_comission, only: [:show, :edit, :update, :destroy]
-  
+
 
   # GET /comissions
   # GET /comissions.json
   def index
-    @comissions = Comission.order('created_at desc')
+    @comissions = Comission.all
   end
 
   # GET /comissions/1
@@ -75,6 +75,6 @@ class ComissionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comission_params
-      params.require(:comission).permit(:name, :code, :parliament_member_id, :comment)
+      params.require(:comission).permit(:code, :parliament_member_id, :comment)
     end
 end

@@ -1,3 +1,4 @@
 class Comission < ActiveRecord::Base
-  belongs_to :fraction
+  belongs_to :parliament_member
+  
 end

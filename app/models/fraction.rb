@@ -26,7 +26,7 @@ class Fraction < ActiveRecord::Base
 
   def selisih
     #code
-    a = ParliamentMember.pluck(:id)
+    a = ParliamentMember.pluck(:name)
     b = Fraction.pluck(:parliament_member_id)
     c = a - b
     self.parliament_member_id = c

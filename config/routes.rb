@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  concern :parliament do
+    resources :parliament_members
+  end
+
+  #comissions
+  resources :comissions, concern: :parliament
+
+  # menu wakil rakyat
+  # resources :parliament_members
+  get '/anggota_wakil_rakyat' => 'parliament_members#index', as: :anggota_wakil_rakyat
+
   resources :organize_fractions
   resources :levels
   #info
@@ -6,7 +17,7 @@ Rails.application.routes.draw do
   get '/kegiatan' =>  'information#index', as: :kegiatan
 
   # menu komisi
-  resources :comissions
+  # resources :comissions
   get '/komisi_wakil_rakyat' => 'comissions#index', as: :komisi_wakil_rakyat
 
   # menu fraksi
@@ -15,10 +26,6 @@ Rails.application.routes.draw do
   #   resources :parliament_members
   # end
   get '/fraksi_wakil_rakyat' => 'fractions#index', as: :fraksi_wakil_rakyat
-
-  # menu wakil rakyat
-  resources :parliament_members
-  get '/anggota_wakil_rakyat' => 'parliament_members#index', as: :anggota_wakil_rakyat
 
   # menu tugas_dan_wewenang
   get '/alat_dan_kelengkapan' => 'boards#alat_dan_kelengkapan', as: :alat_dan_kelengkapan
