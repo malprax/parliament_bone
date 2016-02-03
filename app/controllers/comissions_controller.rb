@@ -16,7 +16,7 @@ class ComissionsController < ApplicationController
 
   # GET /comissions/new
   def new
-
+    @comission = Comission.new
   end
 
   # GET /comissions/1/edit
