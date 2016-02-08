@@ -40,3 +40,4 @@ Revisi tanggal 8 februari
 bisa akses server tanpa login
 logout ada delay error
 cari modem smartfren
+beli ram ddr3 server
