@@ -41,3 +41,4 @@ bisa akses server tanpa login
 logout ada delay error
 cari modem smartfren
 beli ram ddr3 server
+buat simulasi server ujian
