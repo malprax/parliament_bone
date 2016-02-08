@@ -38,3 +38,4 @@ besok berangkat ke malino
 
 Revisi tanggal 8 februari
 bisa akses server tanpa login
+logout ada delay error
