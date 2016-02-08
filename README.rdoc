@@ -35,3 +35,6 @@ perlu disegerakan mikrotik, deadline besok minggu
 
 Revisi tanggal 6 februari
 besok berangkat ke malino
+
+Revisi tanggal 8 februari
+bisa akses server tanpa login
