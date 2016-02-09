@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20160131041359) do
   end
 
   create_table "fractions", force: :cascade do |t|
-    t.integer  "priority"
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

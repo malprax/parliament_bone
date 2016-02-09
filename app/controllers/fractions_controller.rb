@@ -5,7 +5,7 @@ class FractionsController < ApplicationController
   # GET /fractions.json
   def index
     @fractions = Fraction.order('priority desc')
-    @fraction_level = @fractions.group_by{|grup_fraksi| grup_fraksi.parliament_member.fraksi}
+
 
   end
 
@@ -33,7 +33,7 @@ class FractionsController < ApplicationController
 
     respond_to do |format|
       if @fraction.save
-        format.html { redirect_to @fraction, notice: 'Fraction was successfully created.' }
+        format.html { redirect_to fractions_path , notice: 'Fraction was successfully created.' }
         format.json { render :show, status: :created, location: @fraction }
       else
         format.html { render :new }
@@ -51,7 +51,7 @@ class FractionsController < ApplicationController
     # @fraction.parliament_members << @parliament_members
     respond_to do |format|
       if @fraction.update(fraction_params)
-        format.html { redirect_to @fraction, notice: 'Fraction was successfully updated.' }
+        format.html { redirect_to fractions_path, notice: 'Fraction was successfully updated.' }
         format.json { render :show, status: :ok, location: @fraction }
       else
         format.html { render :edit }

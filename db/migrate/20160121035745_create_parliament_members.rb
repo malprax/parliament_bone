@@ -4,7 +4,6 @@ class CreateParliamentMembers < ActiveRecord::Migration
       t.string :name
       t.integer :fraction_id
       t.integer :level_id
-      
       t.timestamps null: false
     end
   end

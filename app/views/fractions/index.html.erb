@@ -1,16 +1,12 @@
 <div class="container">
   <div class="row">
     <h3 class="lead">Daftar Fraksi</h3>
-    <% @fraction_level.each do |grup, parliament_member| %>
-    <h4><%= grup.titleize rescue nil %></h4>
-    <p>Struktur Organisasi</p>
-    <% parliament_member.each do |m| %>
-    <p><%= m.level.name.titleize %>&nbsp;&nbsp;:&nbsp;&nbsp;<%= m.parliament_member.name.titleize %></p>
+    <% @fractions.each do |fraksi| %>
     <p>
-      <%#= link_to 'Edit', edit_fraction_path(fraction) %>
-      <%#= link_to 'Hapus', fraction, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= fraksi.name.titleize %>
+      <%= link_to "Edit", edit_fraction_path(fraksi)  %> ||
+      <%= link_to "Hapus", fraksi, method: :delete, data: {confirm: "Yakin Akan Di Hapus?"}  %>
     </p>
-    <% end %>
     <% end %>
     <br>
     <%= link_to 'Buat Organisasi Fraksi', new_fraction_path, class: "btn btn-success" %>

@@ -1,14 +1,8 @@
 <div class="container">
   <div class="row">
-    <h3 class="lead"><%= @fraction.parliament_member.fraksi.titleize %></h3>
+    <h3 class="lead"><%= @fraction.name %></h3>
     <!-- <p>Susunan Organisasi</p> -->
-    <p>Nama :  <%= @fraction.parliament_member.name %></p>
-    <p>Jabatan :  <%= @fraction.level.name %></p>
-    <p>Dapil :  <%= @fraction.parliament_member.dapil %></p>
 
-    <%#= link_to "Tambah Anggota", new_fraction_parliament_member_path(@fraction) %>
-
-    <%#= @fraction.parliament_members.map{|f| f.name }.join(', ') %>
     <%= link_to 'Edit', edit_fraction_path(@fraction) %> |
     <%= link_to 'Back', fractions_path %>
 

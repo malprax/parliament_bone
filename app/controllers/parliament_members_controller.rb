@@ -77,6 +77,6 @@ class ParliamentMembersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def parliament_member_params
-      params.require(:parliament_member).permit(:name, :fraksi, :dapil )
+      params.require(:parliament_member).permit(:name, :fraction_id, :level_id )
     end
 end
