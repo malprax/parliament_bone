@@ -1,4 +1,3 @@
 class Fraction < ActiveRecord::Base
-  has_many :levels, dependent: :destroy
-  has_many :fractions, dependent: :destroy
+  has_many :parliament_members, dependent: :destroy
 end

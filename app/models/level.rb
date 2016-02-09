@@ -1,3 +1,4 @@
 class Level < ActiveRecord::Base
-  belongs_to :fraction
+  has_many :parliament_members
+
 end

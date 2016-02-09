@@ -5,9 +5,8 @@
 
       <div class="form-inputs">
         <%= f.input :name, label: "Nama" %>
-        <%= f.input :fraction_id, label: "Fraksi" %>
-        <%= f.input :level_id, label:"Jabatan Fraksi" %>
-        <%= f.input :dapil, label: "Dapil" %>
+        <%= f.association :fraction, label: "Fraksi" %>
+        <%= f.association :level, label:"Jabatan Fraksi" %>
       </div>
 
       <div class="form-actions">
