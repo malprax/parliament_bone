@@ -45,10 +45,11 @@ buat simulasi server ujian
 
 Revisi tanggal 9 februari
 Project yang harus diselesaikan:
-1. Project nya dian kampus baru
+1. Projectnya dian kampus baru
 2. Projectnya Kedeputian III unifa
 3. Projectnya Server Malino
-4. Projectnya WEbsite Bone
+4. Projectnya Website Bone
+5. Projectnya Musliadi Tugas Akhir
 
 
 NPWP:

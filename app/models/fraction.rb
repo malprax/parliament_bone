@@ -3,8 +3,8 @@ class Fraction < ActiveRecord::Base
   # has_many :parliament_members, dependent: :destroy
   # has_many :comissions, dependent: :destroy
   # has_and_belongs_to_many :parliament_members
-  belongs_to :level
-  belongs_to :parliament_member
+  has_many :levels, dependent: :destroy
+  has_many :fractions, dependent: :destroy
   before_save :set_priority
   # accepts_nested_attributes_for :parliament_members, allow_destroy: true
 
@@ -26,9 +26,16 @@ class Fraction < ActiveRecord::Base
 
   def selisih
     #code
-    a = ParliamentMember.pluck(:name)
+    a = ParliamentMember.pluck(:id)
     b = Fraction.pluck(:parliament_member_id)
     c = a - b
     self.parliament_member_id = c
+  end
+
+  def self.panggil_selisih
+    a = ParliamentMember.pluck(:id)
+    b = Fraction.pluck(:parliament_member_id)
+    c = a - b
+    ParliamentMember.where("id IN (?)", c)
   end
 end

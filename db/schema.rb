@@ -25,11 +25,10 @@ ActiveRecord::Schema.define(version: 20160131041359) do
   end
 
   create_table "fractions", force: :cascade do |t|
-    t.integer  "level_id"
-    t.integer  "parliament_member_id"
     t.integer  "priority"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "fractions_parliament_members", id: false, force: :cascade do |t|
@@ -62,10 +61,10 @@ ActiveRecord::Schema.define(version: 20160131041359) do
 
   create_table "parliament_members", force: :cascade do |t|
     t.string   "name"
-    t.string   "fraksi"
-    t.string   "dapil"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "fraction_id"
+    t.integer  "level_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

@@ -5,6 +5,7 @@ class InformationController < ApplicationController
   # GET /information.json
   def index
     @information = Information.order('created_at desc')
+    @information_sort_date = @information.group_by{|info|info.created_at }
   end
 
   # GET /information/1

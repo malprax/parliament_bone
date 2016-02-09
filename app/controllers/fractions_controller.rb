@@ -78,6 +78,6 @@ class FractionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fraction_params
-      params.require(:fraction).permit(:level_id, :parliament_member_id, :priority)
+      params.require(:fraction).permit(:name)
     end
 end

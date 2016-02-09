@@ -1,5 +1,5 @@
 class ParliamentMember < ActiveRecord::Base
-  has_many :fractions, dependent: :destroy
+  belongs_to :fraction
   has_many :comissions, dependent: :destroy
   # has_and_belongs_to_many :fractions
   def fraksi_gabung_nama
