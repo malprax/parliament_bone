@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # menu wakil rakyat
   # resources :parliament_members
+  resources :parliament_members
   get '/anggota_wakil_rakyat' => 'parliament_members#index', as: :anggota_wakil_rakyat
 
   resources :organize_fractions
