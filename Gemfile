@@ -156,4 +156,4 @@ gem 'bootstrap-datepicker-rails'
 gem 'barby'
 
 #nested_form
-gem 'nested_form'
+gem "cocoon"

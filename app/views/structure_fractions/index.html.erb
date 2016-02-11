@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Structure Fractions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @structure_fractions.each do |structure_fraction| %>
+      <tr>
+        <td><%= link_to 'Show', structure_fraction %></td>
+        <td><%= link_to 'Edit', edit_structure_fraction_path(structure_fraction) %></td>
+        <td><%= link_to 'Destroy', structure_fraction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Structure fraction', new_structure_fraction_path %>

@@ -18,6 +18,7 @@ class FractionsController < ApplicationController
   # GET /fractions/new
   def new
     @fraction = Fraction.new
+    
   end
 
   # GET /fractions/1/edit
@@ -78,6 +79,6 @@ class FractionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fraction_params
-      params.require(:fraction).permit(:name)
+      params.require(:fraction).permit(:name, :parliament_members_attributes => [:name], :levels_attributes => [:name])
     end
 end

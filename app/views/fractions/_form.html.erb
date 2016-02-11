@@ -2,10 +2,20 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%#= f.input :parliament_member_id, collection: (@fraction.order('name')), label: "Nama Wakil Rakyat"%>
-    <%#= f.association :parliament_member, label_method: :fraksi_gabung_nama, label: "Nama Wakil Rakyat" %>
-    <%#= f.association :level, as: :radio_buttons, label: "Pangkat / Jabatan" %>
+    <%= f.input :name, label: 'Nama Fraksi' %>
+    <div id="tasks">
+      <% f.simple_fields_for :parliament_members do |parliament| %>
+        <%= render 'parliament_fields', f: parliament %>
+        <div class="links">
+            <%= link_to_add_association 'Tambah Anggota', f, :parliament_members %>
+        </div>
+
+      <% end %>
+    </div>
+
+    <%#= f.simple_fields_for :levels do |l| %>
+      <%#= render 'level_fields', f: l %>
+    <%# end %>
   </div>
 
   <div class="form-actions">

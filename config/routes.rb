@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :structure_fractions
   concern :parliament do
     resources :parliament_members
   end
