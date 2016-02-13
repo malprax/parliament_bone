@@ -23,7 +23,9 @@ Rails.application.routes.draw do
   get '/komisi_wakil_rakyat' => 'comissions#index', as: :komisi_wakil_rakyat
 
   # menu fraksi
-  resources :fractions
+  resources :fractions do
+    resources :structure_fractions
+  end
   # do
   #   resources :parliament_members
   # end

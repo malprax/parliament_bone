@@ -14,7 +14,7 @@ class StructureFractionsController < ApplicationController
 
   # GET /structure_fractions/new
   def new
-    @structure_fraction = StructureFraction.new
+    @structure_fraction = @fraction.structure_fractions.build
   end
 
   # GET /structure_fractions/1/edit
@@ -69,6 +69,6 @@ class StructureFractionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def structure_fraction_params
-      params[:structure_fraction].permit(:level_id, :parliament_member_id)
+      params[:structure_fraction].permit(:fraction_id, :levels_attributes => [], :parliament_members_attributes => [])
     end
 end

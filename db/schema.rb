@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20160210112630) do
   end
 
   create_table "structure_fractions", force: :cascade do |t|
+    t.integer  "fraction_id"
     t.integer  "parliament_member_id"
     t.integer  "level_id"
     t.datetime "created_at",           null: false

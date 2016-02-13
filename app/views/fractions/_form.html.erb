@@ -1,11 +1,11 @@
-<%= simple_form_for @fraction do |f| %>
+<%= simple_nested_form_for @fraction do |f| %>
   <%= f.error_notification %>
   <div class="form-inputs">
     <%= f.input :name, label: 'Nama Fraksi' %>
-      <% f.simple_fields_for :structure_fractions do |structure_fraction| %>
+      <%= f.simple_fields_for :structure_fractions do |structure_fraction| %>
         <%= render 'structure_fraction_fields', f: structure_fraction %>
-            <%= link_to 'Tambah Anggota', f, :structure_fractions %>
       <% end %>
+      <%= link_to_add 'Tambah Anggota', :structure_fractions %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>

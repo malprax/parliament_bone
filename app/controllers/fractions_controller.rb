@@ -7,6 +7,7 @@ class FractionsController < ApplicationController
     @fractions = Fraction.order('created_at desc')
 
 
+
   end
 
   # GET /fractions/1
@@ -18,7 +19,8 @@ class FractionsController < ApplicationController
   # GET /fractions/new
   def new
     @fraction = Fraction.new
-    
+    @fraction.structure_fractions.build
+
   end
 
   # GET /fractions/1/edit
@@ -79,6 +81,6 @@ class FractionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fraction_params
-      params.require(:fraction).permit(:name, :parliament_members_attributes => [:name], :levels_attributes => [:name])
+      params.require(:fraction).permit(:name, :structure_fractions_attributes => [:id, :parliament_member_id, :level_id])
     end
 end

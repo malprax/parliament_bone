@@ -154,6 +154,3 @@ gem 'bootstrap-datepicker-rails'
 
 #barcode
 gem 'barby'
-
-#nested_form
-gem "nested_form"

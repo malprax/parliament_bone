@@ -1,9 +1,9 @@
-<%= simple_form_for(@structure_fraction) do |f| %>
+<%= simple_nested_form_for(@fraction, @structure_fraction) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.association :parliament_member, label: "Nama Anggota" %>
-    <%= f.association :level, label: "Jabatan Dalam  Fraksi" %>
+    <%= f.input :parliament_member, label: "Nama Anggota" %>
+    <%= f.input :level, label: "Jabatan Dalam  Fraksi" %>
   </div>
 
   <div class="form-actions">
