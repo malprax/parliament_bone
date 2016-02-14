@@ -5,9 +5,6 @@ class FractionsController < ApplicationController
   # GET /fractions.json
   def index
     @fractions = Fraction.order('created_at desc')
-
-
-
   end
 
   # GET /fractions/1
@@ -19,7 +16,7 @@ class FractionsController < ApplicationController
   # GET /fractions/new
   def new
     @fraction = Fraction.new
-    @fraction.structure_fractions.build
+    @structure_fraction = @fraction.structure_fractions.build
 
   end
 

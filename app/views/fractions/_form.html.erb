@@ -5,7 +5,7 @@
       <%= f.simple_fields_for :structure_fractions do |structure_fraction| %>
         <%= render 'structure_fraction_fields', f: structure_fraction %>
       <% end %>
-      <%= link_to_add 'Tambah Anggota', :structure_fractions %>
+      <%= link_to_add 'Tambah Anggota', f, :structure_fractions %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>

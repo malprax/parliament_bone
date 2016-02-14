@@ -1,5 +1,6 @@
 class StructureFractionsController < ApplicationController
   before_action :set_structure_fraction, only: [:show, :edit, :update, :destroy]
+  before_action :set_fraction, only: [:new, :create, :edit, :update, :destroy ]
 
   # GET /structure_fractions
   # GET /structure_fractions.json
@@ -24,8 +25,8 @@ class StructureFractionsController < ApplicationController
   # POST /structure_fractions
   # POST /structure_fractions.json
   def create
-    @structure_fraction = StructureFraction.new(structure_fraction_params)
-
+    # @structure_fraction = StructureFraction.new(structure_fraction_params)
+    @structure_fraction = @fraction.structure_fractions.create(structure_fraction_params)
     respond_to do |format|
       if @structure_fraction.save
         format.html { redirect_to @structure_fraction, notice: 'Structure fraction was successfully created.' }
@@ -42,7 +43,7 @@ class StructureFractionsController < ApplicationController
   def update
     respond_to do |format|
       if @structure_fraction.update(structure_fraction_params)
-        format.html { redirect_to @structure_fraction, notice: 'Structure fraction was successfully updated.' }
+        format.html { redirect_to fraction_path(@fraction), notice: 'Structure fraction was successfully updated.' }
         format.json { render :show, status: :ok, location: @structure_fraction }
       else
         format.html { render :edit }
@@ -64,7 +65,12 @@ class StructureFractionsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_structure_fraction
-      @structure_fraction = StructureFraction.find(params[:id])
+      @structure_fractions = StructureFraction.all
+      @structure_fraction = @fraction.structure_fractions.find(params[:id])
+    end
+
+    def set_fraction
+      @fraction = Fraction.find(params[:fraction_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
