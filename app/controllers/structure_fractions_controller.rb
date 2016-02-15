@@ -16,6 +16,7 @@ class StructureFractionsController < ApplicationController
   # GET /structure_fractions/new
   def new
     @structure_fraction = @fraction.structure_fractions.build
+    @levels = Level.all
   end
 
   # GET /structure_fractions/1/edit

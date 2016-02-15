@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 #parliament_member
-ParliamentMember.create(name: 'Al Maghfirah Tiara Hisbaini', fraksi: 'demokrat', dapil: 'bone 1')
-ParliamentMember.create(name: 'Abdullah Fath', fraksi: 'demokrat', dapil: 'bone 1')
-ParliamentMember.create(name: 'Aulia Sabril', fraksi: 'hanura', dapil: 'bone 2')
-ParliamentMember.create(name: 'Riskawati Angraini', fraksi: 'hanura', dapil: 'bone 2')
-ParliamentMember.create(name: 'Nurul Islami', fraksi: 'hanura', dapil: 'bone 3')
-ParliamentMember.create(name: 'Muhammad Khadafi Adnan', fraksi: 'golongan karya', dapil: 'bone 3')
+ParliamentMember.create(name: 'Al Maghfirah Tiara Hisbaini')
+ParliamentMember.create(name: 'Abdullah Fath')
+ParliamentMember.create(name: 'Aulia Sabril')
+ParliamentMember.create(name: 'Riskawati Angraini')
+ParliamentMember.create(name: 'Nurul Islami')
+ParliamentMember.create(name: 'Muhammad Khadafi Adnan')
