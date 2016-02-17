@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: information
+#
+#  id         :integer          not null, primary key
+#  title      :string
+#  content    :text
+#  image      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class InformationController < ApplicationController
   before_action :set_information, only: [:show, :edit, :update, :destroy]
 

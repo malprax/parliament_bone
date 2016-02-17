@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: structure_fractions
+#
+#  id                   :integer          not null, primary key
+#  fraction_id          :integer
+#  parliament_member_id :integer
+#  level_id             :integer
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+
 class StructureFractionsController < ApplicationController
   before_action :set_structure_fraction, only: [:show, :edit, :update, :destroy]
   before_action :set_fraction, only: [:new, :create, :edit, :update, :destroy ]

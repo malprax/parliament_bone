@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210112630) do
+ActiveRecord::Schema.define(version: 20160217030341) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "badan_kehormatans", force: :cascade do |t|
+    t.integer  "parliament_member_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "comissions", force: :cascade do |t|
     t.string   "code"
@@ -22,6 +28,12 @@ ActiveRecord::Schema.define(version: 20160210112630) do
     t.string   "comment"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+  end
+
+  create_table "dapils", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "fractions", force: :cascade do |t|
@@ -60,10 +72,15 @@ ActiveRecord::Schema.define(version: 20160210112630) do
 
   create_table "parliament_members", force: :cascade do |t|
     t.string   "name"
+    t.integer  "dapil_id"
     t.integer  "fraction_id"
-    t.integer  "level_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "level_fraction_id"
+    t.integer  "badan_anggaran_id"
+    t.integer  "badan_musyawarah_id"
+    t.integer  "badan_kehormatan_id"
+    t.integer  "badan_legislatif_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "structure_fractions", force: :cascade do |t|

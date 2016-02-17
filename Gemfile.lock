@@ -1,13 +1,13 @@
 GIT
   remote: git://github.com/nerian/bootstrap-wysihtml5-rails.git
-  revision: a4b413aa1c9d5f614a33c3c1f5731ed8bc6302de
+  revision: 53caf10e37eef291f3d4621de374263fcef45c21
   specs:
-    bootstrap-wysihtml5-rails (0.3.3.7)
+    bootstrap-wysihtml5-rails (0.3.3.8)
       railties (>= 3.0)
 
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: bd016009dbf74fc8f999e78a68c9e5869eb0dd6a
+  revision: 37589f9b0c869c8df5be1ee4d83e14fb353a7dff
   specs:
     paperclip (4.3.1)
       activemodel (>= 3.2.0)
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/galetahub/ckeditor.git
-  revision: 8c95708276dd9e8a9b5760abff18a298b86851f8
+  revision: 7f48adec2a0d7b358b354740254bdfc7b8f4ffbd
   specs:
     ckeditor (4.1.6)
       cocaine
@@ -91,7 +91,7 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (~> 10.4)
     arel (6.0.3)
-    autoprefixer-rails (6.3.1)
+    autoprefixer-rails (6.3.3)
       execjs
       json
     barby (0.6.2)
@@ -108,7 +108,7 @@ GEM
       sass (>= 3.3.4)
     bootstrap_form (2.3.0)
     builder (3.2.2)
-    byebug (8.2.1)
+    byebug (8.2.2)
     cancancan (1.13.1)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
@@ -150,7 +150,7 @@ GEM
       sass-rails (< 5.1)
       sprockets (< 2.13)
     debug_inspector (0.0.2)
-    devise (3.5.4)
+    devise (3.5.6)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -269,7 +269,7 @@ GEM
     fog-voxel (0.1.0)
       fog-core
       fog-xml
-    fog-vsphere (0.5.0)
+    fog-vsphere (0.6.0)
       fog-core
       rbvmomi (~> 1.8)
     fog-xenserver (0.2.3)
@@ -278,12 +278,12 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-rails (4.5.0.0)
-      railties (>= 3.2, < 5.0)
+    font-awesome-rails (4.5.0.1)
+      railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     friendly_id (5.0.5)
       activerecord (>= 4.0.0)
-    geocoder (1.2.14)
+    geocoder (1.3.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     gmaps4rails (2.1.2)
@@ -294,7 +294,7 @@ GEM
     i18n (0.7.0)
     inflecto (0.0.2)
     ipaddress (0.8.2)
-    jbuilder (2.4.0)
+    jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.1.0)
@@ -318,13 +318,13 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.99)
     mimemagic (0.3.1)
-    mini_magick (4.3.6)
+    mini_magick (4.4.0)
     mini_portile2 (2.0.0)
-    minitest (5.8.3)
+    minitest (5.8.4)
     multi_json (1.11.2)
     multipart-post (2.0.0)
     nested_form (0.3.2)
-    newrelic_rpm (3.14.1.311)
+    newrelic_rpm (3.14.3.313)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     non-stupid-digest-assets (1.0.6)
@@ -338,7 +338,7 @@ GEM
     prawn (2.0.2)
       pdf-core (~> 0.6.0)
       ttfunk (~> 1.4.0)
-    puma (2.15.3)
+    puma (2.16.0)
     rack (1.6.4)
     rack-pjax (0.8.0)
       nokogiri (~> 1.5)
@@ -362,7 +362,7 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.2)
+    rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     railties (4.2.5)
       actionpack (= 4.2.5)
@@ -371,13 +371,14 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.5.0)
     rb-fsevent (0.9.7)
-    rb-inotify (0.9.5)
+    rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rbvmomi (1.8.2)
       builder
       nokogiri (>= 1.4.1)
       trollop
-    rdoc (4.2.1)
+    rdoc (4.2.2)
+      json (~> 1.4)
     remotipart (1.2.1)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
@@ -398,7 +399,7 @@ GEM
       activemodel (> 4, < 5.1)
     spinjs-rails (1.4)
       rails (>= 3.1)
-    spring (1.6.2)
+    spring (1.6.3)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -422,10 +423,10 @@ GEM
       json (>= 1.8.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
-    warden (1.2.4)
+    unf_ext (0.0.7.2)
+    warden (1.2.6)
       rack (>= 1.0)
-    web-console (2.2.1)
+    web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
