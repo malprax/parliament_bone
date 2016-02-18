@@ -101,11 +101,11 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap (4.0.0.alpha3)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
     bootstrap-datepicker-rails (1.5.0)
       railties (>= 3.0)
-    bootstrap-sass (3.3.6)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
     bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (8.2.2)
@@ -444,8 +444,8 @@ DEPENDENCIES
   barby
   better_errors (~> 1.0.1)
   binding_of_caller (~> 0.7.2)
+  bootstrap (~> 4.0.0.alpha3)
   bootstrap-datepicker-rails
-  bootstrap-sass (~> 3.3.6)
   bootstrap-wysihtml5-rails!
   bootstrap_form
   byebug

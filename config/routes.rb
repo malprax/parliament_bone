@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :badan_legislatifs
+  resources :badan_musyawarahs
   resources :badan_kehormatans
   resources :dapils
   resources :structure_fractions
@@ -37,9 +39,9 @@ Rails.application.routes.draw do
   get '/alat_dan_kelengkapan' => 'boards#alat_dan_kelengkapan', as: :alat_dan_kelengkapan
   get '/panitia_khusus' => 'boards#panitia_khusus', as: :panitia_khusus
   # get '/badan_kehormatan' => 'boards#badan_kehormatan', as: :badan_kehormatan
-  get '/badan_legislasi' => 'boards#badan_legislasi', as: :badan_legislasi
-  get '/badan_anggaran' => 'boards#badan_anggaran', as: :badan_anggaran
-  get '/badan_musyawarah' => 'boards#badan_musyawarah', as: :badan_musyawarah
+  #get '/badan_legislasi' => 'boards#badan_legislasi', as: :badan_legislasi
+  #get '/badan_anggaran' => 'boards#badan_anggaran', as: :badan_anggaran
+  #get '/badan_musyawarah' => 'boards#badan_musyawarah', as: :badan_musyawarah
 
   # menu profil
   get '/profil' => 'profiles#profil', as: :profil

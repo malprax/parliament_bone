@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Badan Legislatifs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @badan_legislatifs.each do |badan_legislatif| %>
+      <tr>
+        <td><%= badan_legislatif.level %></td>
+        <td><%= link_to 'Show', badan_legislatif %></td>
+        <td><%= link_to 'Edit', edit_badan_legislatif_path(badan_legislatif) %></td>
+        <td><%= link_to 'Destroy', badan_legislatif, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Badan legislatif', new_badan_legislatif_path %>

@@ -1,0 +1,2 @@
+module BadanLegislatifsHelper
+end
