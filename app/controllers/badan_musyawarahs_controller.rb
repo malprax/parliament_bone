@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: badan_musyawarahs
+#
+#  id         :integer          not null, primary key
+#  level      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class BadanMusyawarahsController < ApplicationController
   before_action :set_badan_musyawarah, only: [:show, :edit, :update, :destroy]
 

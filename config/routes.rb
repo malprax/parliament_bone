@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :badan_anggarans
   resources :badan_legislatifs
   resources :badan_musyawarahs
   resources :badan_kehormatans
