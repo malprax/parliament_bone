@@ -144,6 +144,20 @@ Tambah lagi kerjaan ini sedikit
 BESOK KERJA WEBSITE Dprd Bone
 
 
+Good referensi
+I need to build a simple website that does the following:
+
+- a shopper signup with email or social media
+- they complete a form and the data is saved on their profile account.
+- they search for a dealer by name, zipcode or using googlemap integration
+- they select a dealer
+- they choose an appointment date
+- add some additional info then send
+- a notification is sent to the corresponding dealer
+- the dealer can then login to his own account and review the shopper profile information
+
+
+
 
 
 NPWP:
