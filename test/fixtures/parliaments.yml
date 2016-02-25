@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dapil: MyString
+  fraksi: MyString
+  jabatan_fraksi: MyString
+  komisi: MyString
+  jabatan_komisi: MyString
+  jabatan_badan_anggaran: MyString
+  jabatan_badan_musyawarah: MyString
+  jabatan_badan_kehormatan: MyString
+  jabatan_badan_legislatif: MyString
+
+two:
+  name: MyString
+  dapil: MyString
+  fraksi: MyString
+  jabatan_fraksi: MyString
+  komisi: MyString
+  jabatan_komisi: MyString
+  jabatan_badan_anggaran: MyString
+  jabatan_badan_musyawarah: MyString
+  jabatan_badan_kehormatan: MyString
+  jabatan_badan_legislatif: MyString

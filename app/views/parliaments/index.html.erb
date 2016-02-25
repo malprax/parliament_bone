@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <h3 clas="lead">Anggota Wakil Rakyat</h3>
+
+    <table class= "table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Dapil</th>
+          <th>Fraksi</th>
+          <th>Jabatan fraksi</th>
+          <th>Komisi</th>
+          <th>Jabatan komisi</th>
+          <th>Jabatan badan anggaran</th>
+          <th>Jabatan badan musyawarah</th>
+          <th>Jabatan badan kehormatan</th>
+          <th>Jabatan badan legislatif</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @parliaments.each do |parliament| %>
+          <tr>
+            <td><%= parliament.name %></td>
+            <td><%= parliament.dapil %></td>
+            <td><%= parliament.fraksi %></td>
+            <td><%= parliament.jabatan_fraksi %></td>
+            <td><%= parliament.komisi %></td>
+            <td><%= parliament.jabatan_komisi %></td>
+            <td><%= parliament.jabatan_badan_anggaran %></td>
+            <td><%= parliament.jabatan_badan_musyawarah %></td>
+            <td><%= parliament.jabatan_badan_kehormatan %></td>
+            <td><%= parliament.jabatan_badan_legislatif %></td>
+            <td><%= link_to 'Show', parliament %></td>
+            <td><%= link_to 'Edit', edit_parliament_path(parliament) %></td>
+            <td><%= link_to 'Destroy', parliament, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Parliament', new_parliament_path, class: "btn btn-default" %>
+
+  </div>
+</div>
