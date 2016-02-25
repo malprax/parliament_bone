@@ -3,6 +3,7 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= form.input :avatar, as: :file %>
     <%= f.input :name, label: "Nama" %>
     <%= f.input :dapil, label: "Daerah Pemilihan" %>
     <%= f.input :fraksi, label: "Fraksi" %>
