@@ -1,5 +1,5 @@
     <div class="row">
-       <div class="col-xs-12 visible-xs">
+       <div class="col-xs-12 hidden-xs-up">
          <h1 class="yayasan"><center>DEWAN PERWAKILAN RAKYAT DAERAH</center></h1>
           <%= image_tag("logo_dprd.jpg",  class: "logo", align: "center")  %>
           <h2 ><center>KABUPATEN BONE</center></h2>
@@ -12,13 +12,21 @@
 
      <div class="row">
        <div class="col-xs-12 col-sm-12 col-md-12">
-           <h1 class="yayasan visible-sm visible-md visible-lg">DEWAN PERWAKILAN RAKYAT DAERAH</h1>
-           <h2 class="hidden-xs">KABUPATEN BONE</h2>
+           <center>
+              <h1 class="yayasan hidden-xs-down">DEWAN PERWAKILAN RAKYAT DAERAH</h1>
+           </center>
+           <br>
        </div>
-       <div class="col-xs-2 col-sm-4 col-md-3 logo_float visible-sm visible-md visible-lg">
-               <%= image_tag("logo_dprd.jpg", class: "logo", align: "center")  %>
+       <div class="col-xs-12 col-sm-12 col-md-12 hidden-xs-down">
+         <center>
+             <%= image_tag("logo_dprd.jpg", class: "logo", align: "center")  %>
+         </center>
+         <br>
        </div>
        <div class="col-xs-12 col-sm-12 col-md-12">
-           <h2 class="hidden-xs">KABUPATEN BONE</h2>
+         <center>
+             <h2 class="hidden-xs-down">KABUPATEN BONE</h2>
+         </center>
+         <br>
        </div>
      </div>
