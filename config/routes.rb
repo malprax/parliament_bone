@@ -23,18 +23,18 @@ Rails.application.routes.draw do
   #get '/badan_musyawarah' => 'boards#badan_musyawarah', as: :badan_musyawarah
 
   # menu profil
-  # get '/profil' => 'profiles#profil', as: :profil
-  # get '/sejarah' => 'profiles#sejarah', as: :sejarah
-  # get '/visi_misi' => 'profiles#visi_misi', as: :visi_misi
-  # get '/hak_kewajiban' => 'profiles#hak_kewajiban', as: :hak_kewajiban
-  # get '/tugas_wewenang' => 'profiles#tugas_wewenang', as: :tugas_wewenang
+  get '/profil' => 'profiles#profil', as: :profil
+  get '/sejarah' => 'profiles#sejarah', as: :sejarah
+  get '/visi_misi' => 'profiles#visi_misi', as: :visi_misi
+  get '/hak_kewajiban' => 'profiles#hak_kewajiban', as: :hak_kewajiban
+  get '/tugas_wewenang' => 'profiles#tugas_wewenang', as: :tugas_wewenang
 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'parliaments#index'
+  root 'information#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

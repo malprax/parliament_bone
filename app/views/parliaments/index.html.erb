@@ -1,23 +1,37 @@
 <div class="container">
   <div class="row">
-    <h3 clas="lead">Daftar Anggota Wakil Rakyat</h3>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <h3 clas="lead">Daftar Anggota Wakil Rakyat</h3>
+    </div>
+
   </div>
   <div class="row">
     <% @parliaments.each do |parliament| %>
-    <div class="col-sm-12 col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12">
       <hr>
     </div>
-    <div class="col-sm-2 col-md-2">
-      <%= image_tag parliament.avatar.url(:thumb) %>
+    <div class="col-xs-4 col-sm-2 col-md-2">
+      <%= image_tag("unknown_person.png", size: "100x100") %>
+      <%#= image_tag parliament.avatar.url(:thumb) %>
     </div>
-    <div class="col-sm-10 col-md-10">
+    <div class="col-xs-6 col-sm-10 col-md-10">
       <div class="row"><strong><%= parliament.name %></strong></div>
       <div class="row">Fraksi&nbsp;&nbsp;<%= parliament.fraksi %></div>
       <div class="row">Dapil&nbsp;&nbsp;<%= parliament.dapil %></div>
     </div>
 
     <% end %>
-<br>
-<%= link_to 'New Parliament', new_parliament_path, class: "btn btn-default" %>
   </div>
+
+
+  <div class="row">
+    <br>
+    <br>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+    <%= link_to '+ Tambah Wakil Rakyat', new_parliament_path, class: "btn btn-default" %>
+  </div>
+  </div>
+
+
+
 </div>
