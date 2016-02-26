@@ -16,6 +16,7 @@
 //= require jquery_nested_form
 //= require chosen-jquery
 //= require jquery-ui
+
 //= require ckeditor/override
 //= require ckeditor/init
 //= require bootstrap-wysihtml5

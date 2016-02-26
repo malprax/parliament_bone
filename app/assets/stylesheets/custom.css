@@ -4,3 +4,9 @@
 *= require font-awesome
 *= require chosen
 */
+
+.navbar-nav .nav-link {
+    display: block;
+    padding: .425rem;
+    
+}
