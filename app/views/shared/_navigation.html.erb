@@ -1,4 +1,4 @@
-<nav class="navbar navbar-full navbar-light bg-faded">
+<nav class="navbar nav-inline navbar-full navbar-light bg-faded pull-right">
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
     &#9776;
   </button>
@@ -12,28 +12,26 @@
         <%= link_to "Profil", profil_path, class: "nav-link" %>
       </li>
 
-      <li class="nav-item">
-        <div class="dropdown">
-          <a  class="nav-link" id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown">
+          <a  class="nav-link"  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Wakil Rakyat
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <div class="dropdown-menu" >
             <%= link_to "Anggota", anggota_wakil_rakyat_path, class: "dropdown-item" %>
             <%= link_to "Komisi", "#", class: "dropdown-item" %>
             <%= link_to "Fraksi", "#", class: "dropdown-item" %>
           </div>
-        </div>
       </li >
-      <li class="nav-item">
-        <div class="dropdown">
-          <a  class="nav-link" id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown">
+
+          <a  class="nav-link "  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Info
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <div class="dropdown-menu" >
             <%= link_to "Kegiatan", kegiatan_path, class: "dropdown-item" %>
             <%= link_to "Produk Hukum", "#", class: "dropdown-item" %>
           </div>
-        </div>
+
       </li >
       <li class="nav-item">
             <%= link_to "Alat Dan Kelengkapan", alat_dan_kelengkapan_path, class:"nav-link" %>
@@ -42,5 +40,4 @@
     </ul>
   </div>
 </nav>
-<br>
 <br>

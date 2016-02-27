@@ -1,29 +1,34 @@
-<section>
-  <div class="container">
-    <div class="row">
-      <ul class="nav nav-tabs">
-          <li role="presentation" class="active page-scroll"><a href="#panitia_khusus">Panitia Khusus</a></li>
-          <li role="presentation" class="page-scroll"><a href="#badan_kehormatan">Badan Kehormatan</a></li>
-          <li role="presentation" class="page-scroll"><a href="#badan_legislasi">Badan Legislasi</a></li>
-          <li role="presentation" class="page-scroll"><a href="#badan_anggaran">Badan Anggaran</a></li>
-          <li role="presentation" class="page-scroll"><a href="#badan_musyawarah">Badan Musyawarah</a></li>
-      </ul>
-    </div>
-  </div>
+<div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#panitia_khusus" role="tab" aria-controls="home">Panitia Khusus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#badan_kehormatan" role="tab" aria-controls="profile">Badan Kehormatan</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#badan_legislasi" role="tab" aria-controls="messages">Badan Legislasi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#badan_anggaran" role="tab" aria-controls="settings">Badan Anggaran</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#badan_musyawarah" role="tab" aria-controls="settings">Badan Musyawarah</a>
+    </li>
+  </ul>
 
-</section>
-<section id="Panitia Khusus">
-  <%= render 'panitia_khusus' %>
-</section>
-<section id="badan_kehormatan">
-  <%= render 'badan_kehormatan' %>
-</section>
-<section id="badan_legislasi">
-  <%= render 'badan_legislasi' %>
-</section>
-<section id="badan_anggaran">
-  <%= render 'badan_anggaran' %>
-</section>
-<section id="badan_musyawarah">
-  <%= render 'badan_musyawarah' %>
-</section>
+</div>
+<br>
+<div class="tab-content">
+  <div class="tab-pane active" id="panitia_khusus" role="tabpanel"><%= render 'panitia_khusus' %></div>
+  <div class="tab-pane" id="badan_kehormatan" role="tabpanel"><%= render 'badan_kehormatan' %></div>
+  <div class="tab-pane" id="badan_legislasi" role="tabpanel"><%= render 'badan_legislasi' %></div>
+  <div class="tab-pane" id="badan_anggaran" role="tabpanel"><%= render 'badan_anggaran' %></div>
+  <div class="tab-pane" id="badan_musyawarah" role="tabpanel"><%= render 'badan_musyawarah' %></div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>

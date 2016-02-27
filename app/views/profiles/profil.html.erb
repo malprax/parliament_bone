@@ -1,25 +1,30 @@
-<section>
-  <div class="container">
-    <div class="row">
-      <ul class="nav nav-tabs">
-          <li role="presentation" class="active page-scroll"><a href="#sejarah">Sejarah</a></li>
-          <li role="presentation" class="page-scroll"><a href="#visi_misi">Visi Dan Misi</a></li>
-          <li role="presentation" class="page-scroll"><a href="#hak_kewajiban">Hak Dan Kewajiban</a></li>
-          <li role="presentation" class="page-scroll"><a href="#tugas_wewenang">Tugas Dan Wewenang</a></li>
-      </ul>
-    </div>
-  </div>
+<div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings">Settings</a>
+    </li>
+  </ul>
 
-</section>
-<section id="sejarah">
-  <%= render 'sejarah' %>
-</section>
-<section id="visi_misi">
-  <%= render 'visi_misi' %>
-</section>
-<section id="hak_kewajiban">
-  <%= render 'hak_kewajiban' %>
-</section>
-<section id="tugas_wewenang">
-  <%= render 'tugas_wewenang' %>
-</section>
+</div>
+<br>
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel"><%= render 'sejarah' %></div>
+  <div class="tab-pane" id="profile" role="tabpanel"><%= render 'visi_misi' %></div>
+  <div class="tab-pane" id="messages" role="tabpanel"><%= render 'hak_kewajiban' %></div>
+  <div class="tab-pane" id="settings" role="tabpanel"><%= render 'tugas_wewenang' %></div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
