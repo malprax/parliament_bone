@@ -158,3 +158,6 @@ gem 'bootstrap-datepicker-rails'
 
 #barcode
 gem 'barby'
+
+#heroku
+gem 'rails_12factor', group: :production
