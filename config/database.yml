@@ -12,9 +12,9 @@ development:
   database: dprd_bone_development
   <<: *defaults
 
-production:
-  database: dprd_bone_production
-  <<: *defaults
+# production:
+#   database: dprd_bone_production
+#   <<: *defaults
 
 test:
   database: dprd_bone_test
