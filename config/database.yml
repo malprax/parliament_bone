@@ -4,16 +4,17 @@ defaults: &defaults
   pool: 5
 
 
+# development:
+#   database: dprd_bone_development
+#   username: postgres
+#   password:
+#   host: localhost
+#   port: 5432
+#
+#   <<: *defaults
+
+# production:
 development:
-  database: dprd_bone_development
-  username: postgres
-  password:
-  host: localhost
-  port: 5432
-
-  <<: *defaults
-
-production:
   database: dc57tjbnmppg78
   username: hccuvwwyxrdugt
   password: xun48thKVzS6aa3czou-x-cq95
