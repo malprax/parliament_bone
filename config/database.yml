@@ -1,32 +1,29 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
-
 defaults: &defaults
   adapter: postgresql
   encoding: unicode
   pool: 5
-
-
-development:
-  database: dprd_bone_development
   username: postgres
   password:
   host: localhost
   port: 5432
+
+
+development:
+  database: dprd_bone_development
   <<: *defaults
 
+production:
+  database: dprd_bone_production
+  <<: *defaults
 
 test:
   database: dprd_bone_test
   <<: *defaults
 
-production:
-  database: dc57tjbnmppg78
-  username: hccuvwwyxrdugt
-  password: xun48thKVzS6aa3czou-x-cq95
-  host: ec2-54-83-3-38.compute-1.amazonaws.com
-  port: 5432
-  <<: *defaults
+# production:
+#   database: dc57tjbnmppg78
+#   username: hccuvwwyxrdugt
+#   password: xun48thKVzS6aa3czou-x-cq95
+#   host: ec2-54-83-3-38.compute-1.amazonaws.com
+#   port: 5432
+#   <<: *defaults
