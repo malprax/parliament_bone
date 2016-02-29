@@ -13,10 +13,10 @@
       </li>
 
       <li class="nav-item dropdown">
-          <a  class="nav-link"  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link" id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Wakil Rakyat
           </a>
-          <div class="dropdown-menu" >
+          <div class="dropdown-menu" aria-labelledby="dLabel" >
             <%= link_to "Anggota", anggota_wakil_rakyat_path, class: "dropdown-item" %>
             <%= link_to "Komisi", "#", class: "dropdown-item" %>
             <%= link_to "Fraksi", "#", class: "dropdown-item" %>
