@@ -26,3 +26,8 @@
 //= require lightbox-bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  $('body').scrollspy({ target: '#navbar-example' });
+
+});
