@@ -13,3 +13,38 @@
   font-family: sans-serif;
   color: #3f903f !important;
 }
+
+
+/*emmbuat statis footer*/
+ * {
+ 	margin: 0;
+ }
+ html, body {
+ 	height: 100%;
+ }
+
+ .wrap {
+ min-height: 100%;
+ height: auto !important;
+ margin: 0 auto -60px;
+ }
+
+
+ .muted {
+ color: #999999;
+ }
+
+ .push, .footer {
+ height: 60px;
+ }
+
+ .footer{
+  //  background: #1f2d1a left top repeat;
+   border-top: 5px #ffcc00 solid;
+   -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
+   -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
+   box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
+  //  color: #000;
+  text-align: center;
+
+ }

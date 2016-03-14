@@ -18,11 +18,14 @@
  @import "bootstrap-datepicker3";
  @import "font-awesome";
  @import "chosen";
- // @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+ @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
  @import "lightbox-bootstrap";
  @import "visi_misi";
- @import "boards"
+ @import "boards";
 
+body{
+  padding-bottom: 70px;
+}
 
 
 // @include media-breakpoint-up(xs) { ... }

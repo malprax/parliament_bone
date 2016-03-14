@@ -6,3 +6,5 @@ make relation between parliament and comission
 081241464111 dokter neni
 
 085242252403 p idrus
+
+ada bug di bagian timeline, layarnya nda pas masuk
