@@ -47,15 +47,16 @@
         <li><%= link_to "Alat Dan Kelengkapan", alat_dan_kelengkapan_path %></li>
         <li><%= link_to "Kontak", "#" %></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Login", "#" %></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Input Kata Yang Dicari....">
         </div>
         <button type="submit" class="btn btn-success">Cari</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Login", "#" %></li>
-      </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
