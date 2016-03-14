@@ -1,112 +1,71 @@
-
-<nav class="navbar nav-inline navbar-full navbar-light bg-faded pull-right">
-  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-    &#9776;
-  </button>
-  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand" href="#">DPRD Bone</a>
-    <div id="navbar-example">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <%= link_to "Beranda", root_url, class: "nav-link" %>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a  class="nav-link" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Profil
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dLabel" >
-              <%= link_to "Profil DPRD", anggota_wakil_rakyat_path, class: "dropdown-item" %>
-              <%= link_to "Visi Misi", "#", class: "dropdown-item" %>
-              <%= link_to "Hak Dan Kewajiban", "#", class: "dropdown-item" %>
-              <%= link_to "Sejarah", "#", class: "dropdown-item" %>
-              <%= link_to "Tugas Dan Wewenang", "#", class: "dropdown-item" %>
-            </div>
-        </li >
-
-        <li class="nav-item dropdown">
-          <a class="nav-link" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Wakil Rakyat
-         </a>
-             <div class="dropdown-menu" aria-labelledby="dLabel" >
-              <%= link_to "Anggota", anggota_wakil_rakyat_path, class: "dropdown-item" %>
-              <%= link_to "Komisi", "#", class: "dropdown-item" %>
-              <%= link_to "Fraksi", "#", class: "dropdown-item" %>
-             </div>
-         </li >
-
-         <li class="nav-item dropdown">
-
-             <a  class="nav-link " id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Galeri
-             </a>
-             <div class="dropdown-menu" aria-labelledby="dLabel" >
-               <%= link_to "Kegiatan", kegiatan_path, class: "dropdown-item" %>
-               <%= link_to "Produk Hukum", "#", class: "dropdown-item" %>
-             </div>
-
-         </li >
-
-         <li class="nav-item">
-               <%= link_to "Alat Dan Kelengkapan", alat_dan_kelengkapan_path, class:"nav-link" %>
-         </li>
-
-         <li class="nav-item">
-               <%= link_to "Kontak", "#", class:"nav-link" %>
-         </li>
-
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">DPRD Bone</a>
     </div>
 
-      <!-- <li class="nav-item dropdown">
-        <a  class="nav-link "  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Berita
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dLabel" >
-            <%#= link_to "Semua Berita", "#", class: "dropdown-item" %>
-            <%#= link_to "Internal", "#", class: "dropdown-item" %>
-            <%#= link_to "Nasional", "#", class: "dropdown-item" %>
-            <%#= link_to "Umum", "#", class: "dropdown-item" %>
-            <%#= link_to "Pengumuman", "#", class: "dropdown-item" %>
-            <%#= link_to "Seputar Bone", "#", class: "dropdown-item" %>
-          </div>
-      </li > -->
-      <!-- <li class="nav-item dropdown">
-        <a  class="nav-link "  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Kepegawaian
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dLabel" >
-            <%#= link_to "Mutasi", "#", class: "dropdown-item" %>
-            <%#= link_to "Pensiun", "#", class: "dropdown-item" %>
-            <%#= link_to "Cuti", "#", class: "dropdown-item" %>
-            <%#= link_to "Karpeg", "#", class: "dropdown-item" %>
-            <%#= link_to "Ijin Belajar Dan Tugas Belajar", "#", class: "dropdown-item" %>
-            <%#= link_to "Kartu Pegawai Elektronik", "#", class: "dropdown-item" %>
-            <%#= link_to "Pendidikan Dan Pelatihan", "#", class: "dropdown-item" %>
-          </div>
-      </li > -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><%= link_to "Beranda", root_url %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Profil DPRD", profil_path %></li>
+            <li><%= link_to "Visi Misi", "#" %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to "Sejarah", "#" %></li>
+            <li><%= link_to "Tugas Dan Wewenang", "#" %></li>
+            <li><%= link_to "Hak Dan Kewajiban", "#" %></li>
 
-      <!-- <li class="nav-item dropdown">
-        <a  class="nav-link "  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Statistik
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dLabel" >
-            <%#= link_to "Golongan", "#", class: "dropdown-item" %>
-            <%#= link_to "Jenis Kelamin", "#", class: "dropdown-item" %>
-            <%#= link_to "Pendidikan", "#", class: "dropdown-item" %>
-            <%#= link_to "Eselon", "#", class: "dropdown-item" %>
-          </div>
-      </li > -->
-
-      <!-- <li class="nav-item dropdown">
-        <a  class="nav-link "  href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Layanan Kepegawaian
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dLabel" >
-            <%#= link_to "Izin Belajar", "#", class: "dropdown-item" %>
-            <%#= link_to "Kepangkatan", "#", class: "dropdown-item" %>
-          </div>
-      </li > -->
-    </ul>
-  </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wakil Rakyat <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Anggota", anggota_wakil_rakyat_path %></li>
+            <li><%= link_to "Komisi", "#" %></li>
+            <li><%= link_to "Fraksi", "#" %></li>
+            <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeri <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Kegiatan", kegiatan_path %></li>
+            <li><%= link_to "Produk Hukum", "#" %></li>
+            <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li><%= link_to "Alat Dan Kelengkapan", alat_dan_kelengkapan_path %></li>
+        <li><%= link_to "Kontak", "#" %></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
-<br>

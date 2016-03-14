@@ -8,15 +8,15 @@ gem 'rails', '4.2.5'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '>=3.2'
 gem 'compass-rails', '~> 2.0.4' #to prevent error sprockets
 
 #bootstrap
-# gem 'bootstrap-sass' , '~> 3.3.6'
-gem 'bootstrap', '~> 4.0.0.alpha3'
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+gem 'bootstrap-sass' , '~> 3.3.6'
+# gem 'bootstrap', '~> 4.0.0.alpha3'
+# source 'https://rails-assets.org' do
+#   gem 'rails-assets-tether', '>= 1.1.0'
+# end
 gem 'autoprefixer-rails'
 
 #add paginate
