@@ -10,14 +10,18 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-
  */
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
+ @import "jquery-ui";
+ @import "bootstrap-datepicker3";
+ @import "font-awesome";
+ @import "chosen";
  // @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
  @import "lightbox-bootstrap";
+ @import "visi_misi";
+ @import "boards"
 
 
 
