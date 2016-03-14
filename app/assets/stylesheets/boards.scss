@@ -1,50 +1,111 @@
 // Place all the styles related to the boards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.header_dprd{
+  padding: 70px 0 20px 0;
+  // line-height: 200px;
 
-.logo_dprd{
-  font-weight: lighter;
+  // font-size: 30px;
+  font-weight: 700;
   font-family: sans-serif;
+  text-align: center;
   // color: #f0ad4e !important;
 }
 
-.logo_bone{
+
+.logo_dprd{
+  padding: 20px 0 30px 0;
   font-weight: lighter;
   font-family: sans-serif;
+  text-align: center;
+  // color: #f0ad4e !important;
+}
+
+.header_bone{
+  padding: 0px 0 100px 0;
+  font-weight: 400;
+  font-family: sans-serif;
   color: #3f903f !important;
+  text-align: center;
 }
 
 
+
+
 /*emmbuat statis footer*/
- * {
- 	margin: 0;
- }
- html, body {
- 	height: 100%;
- }
+ // * {
+ // 	margin: 0;
+ // }
+ // html, body {
+ // 	height: 100%;
+ // }
+ //
+ // .wrap {
+ // min-height: 100%;
+ // height: auto !important;
+ // margin: 0 auto -60px;
+ // }
+ //
+ //
+ // .muted {
+ // color: #999999;
+ // }
+ //
+ // .push, .footer {
+ // height: 60px;
+ // }
+ //
+ // .footer{
+ //  //  background: #1f2d1a left top repeat;
+ //   border-top: 5px #ffcc00 solid;
+ //   -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
+ //   -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
+ //   box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
+ //  //  color: #000;
+ //  text-align: center;
+ //
+ // }
 
- .wrap {
- min-height: 100%;
- height: auto !important;
- margin: 0 auto -60px;
- }
-
-
- .muted {
- color: #999999;
- }
-
- .push, .footer {
- height: 60px;
- }
-
- .footer{
-  //  background: #1f2d1a left top repeat;
-   border-top: 5px #ffcc00 solid;
-   -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
-   -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
-   box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
-  //  color: #000;
-  text-align: center;
-
- }
+ .cuadro_intro_hover{
+        padding: 0px;
+		position: relative;
+		overflow: hidden;
+		height: 200px;
+	}
+	.cuadro_intro_hover:hover .caption{
+		opacity: 1;
+		transform: translateY(-150px);
+		-webkit-transform:translateY(-150px);
+		-moz-transform:translateY(-150px);
+		-ms-transform:translateY(-150px);
+		-o-transform:translateY(-150px);
+	}
+	.cuadro_intro_hover img{
+		z-index: 4;
+	}
+	.cuadro_intro_hover .caption{
+		position: absolute;
+		top:150px;
+		-webkit-transition:all 0.3s ease-in-out;
+		-moz-transition:all 0.3s ease-in-out;
+		-o-transition:all 0.3s ease-in-out;
+		-ms-transition:all 0.3s ease-in-out;
+		transition:all 0.3s ease-in-out;
+		width: 100%;
+	}
+	.cuadro_intro_hover .blur{
+		background-color: rgba(0,0,0,0.7);
+		height: 300px;
+		z-index: 5;
+		position: absolute;
+		width: 100%;
+	}
+	.cuadro_intro_hover .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		height: 300px;
+		text-align: center;
+		top:-20px;
+		width: 100%;
+	}
