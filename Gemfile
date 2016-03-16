@@ -24,6 +24,7 @@ gem 'autoprefixer-rails'
 #gem 'will_paginate'
 gem 'bootstrap_form'
 gem 'simple_form'
+gem 'simple_form_fancy_uploads'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
