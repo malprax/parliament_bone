@@ -27,8 +27,10 @@
       <div class="row">Fraksi&nbsp;&nbsp;<%= parliament.fraksi %></div>
       <div class="row">Dapil&nbsp;&nbsp;<%= parliament.dapil %></div>
     </div>
-
     <% end %>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <%= will_paginate @parliaments, renderer: BootstrapPagination::Rails %>
+    </div>
   </div>
   <br>
   <br>

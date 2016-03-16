@@ -7,7 +7,8 @@ class ParliamentsController < ApplicationController
   # GET /parliaments
   # GET /parliaments.json
   def index
-    @parliaments = Parliament.all
+    @parliaments = Parliament.paginate(:page => params[:page], :per_page => 9)
+
   end
 
   # GET /parliaments/1
