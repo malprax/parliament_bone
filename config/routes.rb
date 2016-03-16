@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :parliaments
   # menu wakil rakyat
   get '/anggota_wakil_rakyat' => 'parliaments#index', as: :anggota_wakil_rakyat
