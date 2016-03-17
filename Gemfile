@@ -21,7 +21,7 @@ gem 'autoprefixer-rails'
 
 #add paginate
 gem 'will_paginate-bootstrap'
-gem 'will_paginate'
+# gem 'will_paginate'
 gem 'bootstrap_form'
 gem 'simple_form'
 gem 'simple_form_fancy_uploads'
