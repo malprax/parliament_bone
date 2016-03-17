@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  devise_scope :user do
+      get "sign_in", to: "devise/sessions#new"
+  end
+  
   resources :parliaments
   # menu wakil rakyat
   get '/anggota_wakil_rakyat' => 'parliaments#index', as: :anggota_wakil_rakyat
