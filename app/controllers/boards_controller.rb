@@ -16,4 +16,8 @@ class BoardsController < ApplicationController
 
   def badan_musyawarah
   end
+
+  def kontak
+    #code
+  end
 end

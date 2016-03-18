@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_scope :user do
       get "sign_in", to: "devise/sessions#new"
   end
-  
+
   resources :parliaments
   # menu wakil rakyat
   get '/anggota_wakil_rakyat' => 'parliaments#index', as: :anggota_wakil_rakyat
@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   #info
   resources :information
   get '/kegiatan' =>  'information#index', as: :kegiatan
+
+  #kontak kami
+  get '/kontak' => 'boards#kontak', as: :kontak
 
   # menu komisi
   # resources :comissions
