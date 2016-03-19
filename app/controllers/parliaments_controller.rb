@@ -27,6 +27,16 @@ class ParliamentsController < ApplicationController
   # GET /parliaments.json
   def index
     @parliaments = Parliament.paginate(:page => params[:page], :per_page => 9)
+    @allparliaments = Parliament.order("created_at asc")
+    respond_to do |format|
+        format.html # don't forget if you pass html
+        # format.xls { send_data(@allparliaments.to_xls) }
+        format.xls {
+          filename = "Wakil_Rakyat_DPRD_Bone.xls"
+          urut_tabel = [:name, :dapil, :fraksi, :jabatan_fraksi]
+          send_data(@allparliaments.to_xls(:only => urut_tabel), :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+        }
+    end
 
   end
 

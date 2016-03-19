@@ -165,4 +165,5 @@ gem 'barby'
 gem 'rails_12factor' , group: :production
 
 #table download in excel
-gem 'roo', '~> 2.3.2'
+# gem 'roo', '~> 2.3.2'
+gem 'to_xls-rails'
