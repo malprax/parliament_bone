@@ -170,3 +170,5 @@ Peraturan Pemerintah Nomor 46 tahun 2013, penghasilan dibawah 4.8 milyar satu ta
 Untuk Foto Upload Dulu Di Galeri baru dipilih
 
 no progress again stuck
+
+# buat progres tiap minggu
