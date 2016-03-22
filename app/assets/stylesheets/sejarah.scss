@@ -1,9 +1,12 @@
 .sejarah{
   padding-top: 100px !important;
   padding-bottom: 70px !important;
-  border-top: 1px solid #d4d4d4;
-  background-color: #e7e7e7;
-  h1{color: #A94442;}
+  // border-top: 1px solid #d4d4d4;
+  background-color: #fff;
+  h1{
+    color: #A94442;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  }
   img{
     padding-bottom: 30px !important;
   }
