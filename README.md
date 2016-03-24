@@ -11,3 +11,4 @@ ada bug di bagian timeline, layarnya nda pas masuk
 buat pelayanan yang langsung dimasukkan dengan
 
 menu menu baru bisa dibuatkan gambar dengan keluaran svg
+istirahat dulu hari ini semoga besok bisa lebih lancar
