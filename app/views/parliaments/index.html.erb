@@ -29,8 +29,14 @@
     </div>
     <% end %>
     <div class="col-xs-12 col-sm-12 col-md-12">
-      <%= link_to 'Excel Download', parliaments_path(:format => :xls) %>
       <%= will_paginate @parliaments, renderer: BootstrapPagination::Rails %>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <%= link_to 'Excel Download', parliaments_path(:format => :xls) %>
+      <%= form_tag import_parliaments_path, multipart: true do %>
+        <%= file_field_tag :file %>
+        <%= submit_tag "Upload Xls" %>
+      <% end %>
     </div>
   </div>
   <br>

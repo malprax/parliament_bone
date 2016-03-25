@@ -22,6 +22,11 @@ class ParliamentsController < ApplicationController
   # load_and_authorize_resource
   before_action :authenticate_user!, except: [:index]
 
+  def upload
+    #code
+    Parliament.import(params[:file])
+    redirect_to current_url, notice: "Data Berhasil Diupload"
+  end
 
   # GET /parliaments
   # GET /parliaments.json

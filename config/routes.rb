@@ -4,7 +4,9 @@ Rails.application.routes.draw do
       get "sign_in", to: "devise/sessions#new"
   end
 
-  resources :parliaments
+  resources :parliaments do
+    collection { post :upload}
+  end
   # menu wakil rakyat
   get '/anggota_wakil_rakyat' => 'parliaments#index', as: :anggota_wakil_rakyat
 
