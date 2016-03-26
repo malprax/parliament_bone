@@ -20,12 +20,12 @@
 class ParliamentsController < ApplicationController
   before_action :set_parliament, only: [:show, :edit, :update, :destroy]
   # load_and_authorize_resource
-  before_action :authenticate_user!, except: [:index]
+  # before_action :authenticate_user!, except: [:index]
 
   def upload
     #code
     Parliament.import(params[:file])
-    redirect_to current_url, notice: "Data Berhasil Diupload"
+    redirect_to :back, notice: "Data Berhasil Diupload"
   end
 
   # GET /parliaments
