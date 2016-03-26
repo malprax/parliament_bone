@@ -50,15 +50,32 @@ class Parliament < ActiveRecord::Base
 
   def self.import(file)
     #code
+    # ex = open_spreadsheet(file)
     ex  = Roo::Excel.new("#{Rails.root}/public/Wakil_Rakyat_DPRD_Bone.xls")
     # ex.default_sheet = ex.sheets[1]
-    3.upto(1000) do |line|
-      name = ex.cell(line,'A')
-      dapil = ex.cell(line, 'B')
-      fraksi = ex.cell(line,'B')
-      @allparliaments = Parliament.create(:name => name, :dapil => dapil, :fraksi => fraksi)
+    # 3.upto(1000) do |line|
+    #   name = ex.cell(line,'A')
+    #   dapil = ex.cell(line, 'B')
+    #   fraksi = ex.cell(line,'B')
+    #   @parliaments = Parliament.create(:name => name, :dapil => dapil, :fraksi => fraksi)
+    # end
+
+    (2..ex.last_row).each do |i|
+      row = Hash[[header, ex.row(i)].transpose]
+      parliament = find_by_id(row["id"]) || new
+      parliament.attributes = parliament.to_hash.slice(*row.to_hash.keys)
+      parliament.save!
     end
   end
+
+  # def open_spreadsheet
+  #   #code
+  #   case File.extname(file.original_filename)
+  #   when ".csv" then Roo::Csv.new(file.path, nil, :ignore)
+  #   when ".xls" then Roo::Excel.new(file.path, nil, :ignore)
+  #   when ".xlsx" then Roo::Excelx.new(file.path, nil, :ignore)
+  #   else raise "unknwon file type: #{(file.original_filename)}"
+  # end
  # validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
  # validates_attachment_file_name :avatar, matches: [/png\Z/, /jpe?g\Z/]
 end
