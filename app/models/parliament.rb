@@ -16,7 +16,7 @@
 #  created_at               :datetime         not null
 #  updated_at               :datetime         not null
 #
-require 'roo'
+# require 'roo'
 class Parliament < ActiveRecord::Base
 
   # if Rails.env.development?
@@ -106,18 +106,18 @@ class Parliament < ActiveRecord::Base
 
 
  # attr_accessible  :name, :dapil, :fraksi
-def self.import(file)
+# def self.import(file)
     # spreadsheet = open_spreadsheet(file)
     # spreadsheet = Roo::Excel.new("#{Rails.root}/public/Wakil_Rakyat_DPRD_Bone.xls")
-    spreadsheet = Roo::Spreadsheet.open('./rails_temp_upload', extension: :xls)
-    header = spreadsheet.row(1)
-    (2..spreadsheet.last_row).each do |i|
-      row = Hash[[header, spreadsheet.row(i)].transpose]
-      parliament = Parliament.find_by(name: row["Name"].to_s) || Parliament.new
-      parliament.attributes = row.to_hash.slice("name", "dapil", "fraksi", "id" )
-      parliament.save!
-    end
-  end
+  #   spreadsheet = Roo::Spreadsheet.open('./rails_temp_upload', extension: :xls)
+  #   header = spreadsheet.row(1)
+  #   (2..spreadsheet.last_row).each do |i|
+  #     row = Hash[[header, spreadsheet.row(i)].transpose]
+  #     parliament = Parliament.find_by(name: row["Name"].to_s) || Parliament.new
+  #     parliament.attributes = row.to_hash.slice("name", "dapil", "fraksi", "id" )
+  #     parliament.save!
+  #   end
+  # end
 
   # def self.open_spreadsheet(file)
     # case File.extname(file.original_filename)
@@ -127,4 +127,8 @@ def self.import(file)
     # else raise "Unknown file type: #{file.original_filename}"
     # end
   # end
+def self.import(file)
+  #code
+end
+
 end
