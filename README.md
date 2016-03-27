@@ -12,3 +12,8 @@ buat pelayanan yang langsung dimasukkan dengan
 
 menu menu baru bisa dibuatkan gambar dengan keluaran svg
 istirahat dulu hari ini semoga besok bisa lebih lancar
+
+
+#upload file excel masih dalam tahap pekerjaan sudah beberapa kali direvisi
+#icon social media selesai dibuat
+#halaman beranda diperbaiki css nya

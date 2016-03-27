@@ -108,11 +108,12 @@ class Parliament < ActiveRecord::Base
  # attr_accessible  :name, :dapil, :fraksi
 def self.import(file)
     # spreadsheet = open_spreadsheet(file)
-    spreadsheet = Roo::Excel.new("#{Rails.root}/public/Wakil_Rakyat_DPRD_Bone.xls")
+    # spreadsheet = Roo::Excel.new("#{Rails.root}/public/Wakil_Rakyat_DPRD_Bone.xls")
+    spreadsheet = Roo::Spreadsheet.open('./rails_temp_upload', extension: :xls)
     header = spreadsheet.row(1)
     (2..spreadsheet.last_row).each do |i|
       row = Hash[[header, spreadsheet.row(i)].transpose]
-      parliament = Parliament.find_by(id: row["id"].to_i) || Parliament.new
+      parliament = Parliament.find_by(name: row["Name"].to_s) || Parliament.new
       parliament.attributes = row.to_hash.slice("name", "dapil", "fraksi", "id" )
       parliament.save!
     end
