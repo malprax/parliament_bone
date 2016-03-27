@@ -112,8 +112,8 @@ def self.import(file)
     header = spreadsheet.row(1)
     (2..spreadsheet.last_row).each do |i|
       row = Hash[[header, spreadsheet.row(i)].transpose]
-      parliament = find_by_name(row["name"]) || new
-      parliament.attributes = row.to_hash.slice("name", "dapil", "fraksi" )
+      parliament = Parliament.find_by(id: row["id"].to_i) || Parliament.new
+      parliament.attributes = row.to_hash.slice("name", "dapil", "fraksi", "id" )
       parliament.save!
     end
   end
