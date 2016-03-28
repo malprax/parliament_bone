@@ -127,8 +127,8 @@ class Parliament < ActiveRecord::Base
     # else raise "Unknown file type: #{file.original_filename}"
     # end
   # end
-def self.import(file)
+# def self.import(file)
   #code
-end
+# end
 
 end
