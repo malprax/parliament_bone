@@ -16,10 +16,10 @@
 #  created_at               :datetime         not null
 #  updated_at               :datetime         not null
 #
-# require 'roo'
+
 
 class Parliament < ActiveRecord::Base
-
+require 'roo'
   # if Rails.env.development?
       has_attached_file :avatar, styles: { medium: "300x300>", thumb: "50x50>" }, default_url: "unknown_person.png"
   # end
@@ -30,21 +30,23 @@ class Parliament < ActiveRecord::Base
 
   def self.import(file)
     #code
+    allowed_attributes = ["Name","Dapil","Fraksi","Jabatan fraksi"]
     spreadsheet = open_spreadsheet(file)
     header = spreadsheet.row(1)
     (2..spreadsheet.last_row).each do |i|
-    row = Hash[[header, spreadsheet.row(i)].transpose]
-    parliament = find_by_id(row["id"]) || new
-    parliament.attributes = row.to_hash.slice(*accessible_attributes)
-    parliament.save!
+        row = Hash[[header, spreadsheet.row(i)].transpose]
+        parliament = where(name: row["Name"]) || new
+        parliament.attributes = row.to_hash.select { |k,v| allowed_attributes.include? k }
+        parliament.save!
+    end
   end
 
   def self.open_spreadsheet(file)
     # code
     case File.extname(file.original_filename)
-    when '.csv' then Roo::Csv.new(file.path, nil, :ignore)
-    when '.xls' then Roo::Excel.new(file.path, nil, :ignore)
-    when '.xlsx' then Roo::Excelx.new(file.path, nil, :ignore)
+    when '.csv' then Roo::Csv.new(file.path, nil, packed: nil, file_warning: :ignore)
+    when '.xls' then Roo::Excel.new("#{Rails.root}/public/Wakil_Rakyat_DPRD_Bone.xls")
+    when '.xlsx' then Roo::Excelx.new(file.path, nil, packed: nil, file_warning: :ignore)
     else raise "Unknown file type: #{file.original_filename}"
     end
   end

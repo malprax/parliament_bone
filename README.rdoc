@@ -172,3 +172,5 @@ Untuk Foto Upload Dulu Di Galeri baru dipilih
 no progress again stuck
 
 # buat progres tiap minggu
+
+#minggu ini tidak ada kegiatan dulu
