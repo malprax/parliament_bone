@@ -17,3 +17,5 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 #upload file excel masih dalam tahap pekerjaan sudah beberapa kali direvisi
 #icon social media selesai dibuat
 #halaman beranda diperbaiki css nya
+
+#istirahat lagi progress dulu hari ini
