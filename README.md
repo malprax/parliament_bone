@@ -19,3 +19,4 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 #halaman beranda diperbaiki css nya
 
 #istirahat lagi progress dulu hari ini
+#ke sinjai dulu hari ini guud luck
