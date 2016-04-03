@@ -20,3 +20,4 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 
 #istirahat lagi progress dulu hari ini
 #ke sinjai dulu hari ini guud luck
+#blum dapat progress baru lagi
