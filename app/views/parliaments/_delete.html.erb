@@ -1,0 +1,16 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+        <h3>Hapus Programs</h3>
+      </div>
+      <div class="modal-body">
+          <ul class="errors"></ul>
+            Apakah Anda Ingin Menghapus Right And Responsibility <b><%= @right_responsibility.name %></b>?
+      </div>
+      <div class="modal-footer">
+        <%= link_to "Ya, Hapus Right Responsibility Ini", right_responsibility_path(@right_responsibility), method: :delete, remote:true, class: "btn btn-danger" %>
+        <!-- <button type="submit" class="btn btn-success submit" data-style="expand-left" >Hapus</button> -->
+        <%= link_to "Tidak", "#", class: "btn btn-default", data: { dismiss: "modal" } %>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Detail</h3>
+    </div>
+    <div class="modal-body">
+      <p>
+        <strong>Title:</strong>
+        <%= @right_responsibility.name %>
+      </p>
+
+      <p>
+        <strong>Content:</strong>
+        <%= raw(@right_responsibility.content) %>
+      </p>
+
+      <p>
+        <strong>Slug:</strong>
+        <%= @right_responsibility.slug %>
+      </p>
+
+    </div>
+    <div class="modal-footer">
+
+      <%= link_to 'Tutup','#', class: 'btn btn-danger', data: {dismiss: 'modal'} %>
+
+    </div>
+
+  </div>
+</div>
