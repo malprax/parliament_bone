@@ -23,13 +23,22 @@ class InformationController < ApplicationController
   # GET /information
   # GET /information.json
   def index
-    @information = Information.order('created_at desc')
-    @information_sort_date = @information.group_by{|info|info.created_at }
+    @informations = Information.order('created_at desc')
+    @information_sort_date = @informations.group_by{|info|info.created_at }
   end
 
   # GET /information/1
   # GET /information/1.json
   def show
+  end
+
+  def information_show
+    #code
+    @information = Information.find(params[:information_id])
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /information/new
@@ -44,11 +53,12 @@ class InformationController < ApplicationController
   # POST /information
   # POST /information.json
   def create
+    @informations = Information.order('created_at desc')
     @information = Information.new(information_params)
 
     respond_to do |format|
       if @information.save
-        format.html { redirect_to @information, notice: 'Information was successfully created.' }
+        format.html { redirect_to kegiatan_path, notice: 'Information was successfully created.' }
         format.json { render :show, status: :created, location: @information }
       else
         format.html { render :new }
@@ -60,9 +70,10 @@ class InformationController < ApplicationController
   # PATCH/PUT /information/1
   # PATCH/PUT /information/1.json
   def update
+    @informations = Information.order('created_at desc')
     respond_to do |format|
       if @information.update(information_params)
-        format.html { redirect_to @information, notice: 'Information was successfully updated.' }
+        format.html { redirect_to kegiatan_path, notice: 'Information was successfully updated.' }
         format.json { render :show, status: :ok, location: @information }
       else
         format.html { render :edit }
@@ -73,11 +84,16 @@ class InformationController < ApplicationController
 
   # DELETE /information/1
   # DELETE /information/1.json
+  def delete
+    #code
+    @information = Information.find(params[:information_id])
+  end
   def destroy
+    @informations = Information.order('created_at desc')
     @information.destroy
     respond_to do |format|
       format.html { redirect_to information_index_url, notice: 'Information was successfully destroyed.' }
-      format.json { head :no_content }
+      format.js
     end
   end
 

@@ -1,13 +1,15 @@
 <%= simple_form_for(@information) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="modal-body">
     <%= f.input :title, label: "Judul" %>
-    <%= f.input :content, label: "Isi" %>
+    <%= f.input :content, label: "Isi", as: :wysihtml5, :input_html => { :rows => 10 , :style => 'width: 100%'}%>
     <%= f.input :image %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, class: "btn-success-outline" %>
+  <div class="modal-footer">
+      <%= f.button :submit, class: 'btn btn-success'  %>
+      <!-- <button type="submit" class="btn btn-success submit" data-style="expand-left" >Simpan</button> -->
+      <%= link_to 'Tutup','#', class: 'btn btn-danger', data: {dismiss: 'modal'} %>
   </div>
+
 <% end %>

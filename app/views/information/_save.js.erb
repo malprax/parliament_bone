@@ -1,9 +1,9 @@
 $("ul.errors").html("")
-<% if @right_responsibility.errors.any? %>
-  <% @right_responsibility.errors.full_messages.each do |message| %>
+<% if @information.errors.any? %>
+  <% @information.errors.full_messages.each do |message| %>
     $("ul.errors").append($("<li />").html("<%= message %>"))
   <% end %>
 <% else %>
-  $(".right_responsibility-index").html("<%= escape_javascript(render 'index').html_safe %>")
-  $("#right_responsibility-modal").modal('hide')
+  $(".information_index").html("<%= escape_javascript(render 'index').html_safe %>")
+  $("#information_modal").modal('hide')
 <% end %>

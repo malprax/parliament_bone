@@ -1,10 +1,11 @@
 <div class="container">
-  <div class="row">
+  <div class="row information_index">
     <h3 class="lead"><%= @information.title %></h3>
     <p><%= @information.created_at.strftime("%d-%m-%Y") %></p>
     <p><%= @information.content %></p>
-    <%= link_to 'Edit', edit_information_path(@information) %> |
+    <%= link_to 'Edit', edit_information_path(@information), remote: true %> |
     <%= link_to 'Kembali', information_index_path %>
 
   </div>
+  <div id="information_modal" class="modal fade"></div>
 </div>

@@ -1,0 +1,9 @@
+<% @informations.each do |info| %>
+        <article>
+          <h3 class="lead"><%= link_to info.title, info %></h3>
+          <p>Publikasi <%= info.created_at.strftime("%d-%m-%Y") %></p>
+          <p><%= truncate(info.content, length: 250, escape: false).html_safe %><%= link_to "Selengkapnya", info %></p>
+          <br>
+          <br>
+        </article>
+<% end %>
