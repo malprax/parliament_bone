@@ -32,4 +32,4 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 #make email
 #make dropbox
 #add colum for tanggal lahir dan tempat lahir anggota dewan
-#add sedd semua daftar anggota dewan
+#add seed semua daftar anggota dewan
