@@ -2,6 +2,8 @@ class CreateParliaments < ActiveRecord::Migration
   def change
     create_table :parliaments do |t|
       t.string :name
+      t.string :tempat_lahir
+      t.date   :tanggal_lahir
       t.string :dapil
       t.string :fraksi
       t.string :jabatan_fraksi
