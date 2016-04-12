@@ -30,3 +30,4 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 
 #progres stuck again this day
 #make email
+#make dropbox
