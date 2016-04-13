@@ -54,19 +54,20 @@
 
   .head{
     h1{
-      color: #749EAD;
+      color: #009688;
       font-size:300%;
-      padding-bottom: 100px;
+      padding-bottom: 60px;
       text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
   }
   .body{
-    font-size: 120%;
-    span.glyphicon {
-      font-size: 2.2em;
-      padding-bottom: 40px;
+    // font-size: 120%;
+    padding-bottom: 40px;
+    h2{
+      color: #795548;
       text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
+
   }
 }
 
