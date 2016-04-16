@@ -1,54 +1,80 @@
+<div class="container">
+  <div class="col-sm-12 col-md-12 col-xs-12">
+    <p>
+      <strong>Nama:</strong>
+      <%= @parliament.name %>
+    </p>
 
+    <p>
+      <strong>Tempat, Tanggal Lahir</strong>
+      <%= @parliament.tempat_lahir %>, <%= @parliament.tanggal_lahir %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @parliament.name %>
-</p>
+    <% if @parliament.dapil? %>
+    <p>
+      <strong>Dapil:</strong>
+      <%= @parliament.dapil %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Dapil:</strong>
-  <%= @parliament.dapil %>
-</p>
+    <% if @parliament.fraksi? %>
+    <p>
+      <strong>Fraksi:</strong>
+      <%= @parliament.fraksi %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Fraksi:</strong>
-  <%= @parliament.fraksi %>
-</p>
+    <% if @parliament.jabatan_fraksi? %>
+    <p>
+      <strong>Jabatan fraksi:</strong>
+      <%= @parliament.jabatan_fraksi %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Jabatan fraksi:</strong>
-  <%= @parliament.jabatan_fraksi %>
-</p>
+    <% if @parliament.komisi? %>
+    <p>
+      <strong>Komisi:</strong>
+      <%= @parliament.komisi %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Komisi:</strong>
-  <%= @parliament.komisi %>
-</p>
+    <% if @parliament.jabatan_komisi? %>
+    <p>
+      <strong>Jabatan komisi:</strong>
+      <%= @parliament.jabatan_komisi %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Jabatan komisi:</strong>
-  <%= @parliament.jabatan_komisi %>
-</p>
+    <% if @parliament.jabatan_badan_anggaran? %>
+    <p>
+      <strong>Jabatan badan anggaran:</strong>
+      <%= @parliament.jabatan_badan_anggaran %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Jabatan badan anggaran:</strong>
-  <%= @parliament.jabatan_badan_anggaran %>
-</p>
+    <% if@parliament.jabatan_badan_musyawarah? %>
+    <p>
+      <strong>Jabatan badan musyawarah:</strong>
+      <%= @parliament.jabatan_badan_musyawarah %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Jabatan badan musyawarah:</strong>
-  <%= @parliament.jabatan_badan_musyawarah %>
-</p>
+    <% if @parliament.jabatan_badan_kehormatan? %>
+    <p>
+      <strong>Jabatan badan kehormatan:</strong>
+      <%= @parliament.jabatan_badan_kehormatan %>
+    </p>
+    <% end %>
 
-<p>
-  <strong>Jabatan badan kehormatan:</strong>
-  <%= @parliament.jabatan_badan_kehormatan %>
-</p>
-
-<p>
-  <strong>Jabatan badan legislatif:</strong>
-  <%= @parliament.jabatan_badan_legislatif %>
-</p>
-
-<%= link_to 'Edit', edit_parliament_path(@parliament) %> |
-<%= link_to 'Back', parliaments_path %>
+    <% if @parliament.jabatan_badan_legislatif? %>
+    <p>
+      <strong>Jabatan badan legislatif:</strong>
+      <%= @parliament.jabatan_badan_legislatif %>
+    </p>
+    <% end %>
+  </div>
+  <div class="col-sm-12 col-md-12 col-xs-12">
+    <%= link_to 'Edit', edit_parliament_path(@parliament), class: "btn btn-warning"%> &nbsp;
+    <%= link_to 'Back', parliaments_path, class: "btn btn-default" %>
+  </div>
+</div>
