@@ -19,10 +19,12 @@
 # t.string :jabatan_badan_legislatif
 
 #parliament_member
-#Komisi I
+#Ketua DPRD
 Parliament.create(name: 'Drs. Andi Akbar Yahya, MM', tempat_lahir: 'Timurung', tanggal_lahir: '20 April 1970', fraksi: 'Golongan Karya')
 Parliament.create(name: 'Andi Samsidar Ishak', tempat_lahir: 'Arasoe', tanggal_lahir: '5 April 1971', fraksi: 'Gerindra')
 Parliament.create(name: 'Drs. A. Taufiq Kadir, MH', tempat_lahir: 'Libureng', tanggal_lahir: '9 September 1957', fraksi: 'Nasdem')
+Parliament.create(name: 'Usman. T', tempat_lahir: 'Tujue', tanggal_lahir: '1 Juli 1964', fraksi: 'PAN')
+#Komisi I
 Parliament.create(name: 'Drs. H. A. M. Amin Mangussara', tempat_lahir: 'Bone', tanggal_lahir: '25 September 1944', fraksi: 'Golongan Karya', komisi: 'I', jabatan_komisi: 'Ketua')
 Parliament.create(name: 'H. Saipullah Latif, SE', tempat_lahir: 'Bone', tanggal_lahir: '3 April 1967', fraksi: 'PNBK', komisi: 'I', jabatan_komisi: 'Wakil Ketua')
 Parliament.create(name: 'Suharni', tempat_lahir: 'Ujung Lamuru', tanggal_lahir: '16 Oktober 1977', fraksi: 'Nasdem', komisi: 'I', jabatan_komisi: 'Sekretaris')

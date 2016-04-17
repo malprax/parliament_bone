@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20160316014404) do
   create_table "parliaments", force: :cascade do |t|
     t.string   "name"
     t.string   "tempat_lahir"
-    t.date     "tanggal_lahir"
+    t.string   "tanggal_lahir"
     t.string   "dapil"
     t.string   "fraksi"
     t.string   "jabatan_fraksi"
