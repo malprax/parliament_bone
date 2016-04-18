@@ -21,7 +21,11 @@
 class Parliament < ActiveRecord::Base
 require 'roo'
   # if Rails.env.development?
-      has_attached_file :avatar, styles: { medium: "300x300>", thumb: "50x50>" }, default_url: "unknown_person.png"
+      # has_attached_file :avatar, styles: { medium: "300x300>", thumb: "50x50>" }, default_url: "unknown_person.png"
+      has_attached_file :image, :styles => { :medium => "200x", :thumb => "100x100>" }, :default_url => "default.jpg",
+                        :storage => :dropbox,
+                        :dropbox_credentials => Rails.root.join("config/dropbox.yml",
+                        :path => "parliaments/:style/:id_filename")
   # end
   # def self.import(file)
   #   #code

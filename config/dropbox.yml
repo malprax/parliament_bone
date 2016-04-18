@@ -1,0 +1,11 @@
+app_key: "sycntwgnglzsyx1"
+app_secret: "nv6illbektgczoa"
+access_token: "bw63t3v5m0espyef"
+access_token_secret: "7bxti80ofxf8lem"
+user_id: "554653145"
+access_type: "dropbox"
+
+# rake dropbox:authorize APP_KEY=sycntwgnglzsyx1 APP_SECRET=nv6illbektgczoa ACCESS_TYPE=dropbox
+# access_token: bw63t3v5m0espyef
+# access_token_secret: 7bxti80ofxf8lem
+# user_id: 554653145
