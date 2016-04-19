@@ -29,7 +29,7 @@
     </div>
     <% end %>
     <div class="col-xs-12 col-sm-12 col-md-12">
-      <%= will_paginate @parliaments, renderer: BootstrapPagination::Rails %>
+      <%= will_paginate @parliaments, renderer: BootstrapPagination::Rails, class: 'pagination' %>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
       <%= link_to 'Excel Download', parliaments_path(:format => :xls) %>
