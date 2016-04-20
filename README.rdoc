@@ -174,3 +174,4 @@ no progress again stuck
 # buat progres tiap minggu
 
 #minggu ini tidak ada kegiatan dulu
+#hari ini off dulu nda ada kegiatan
