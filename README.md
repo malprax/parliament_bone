@@ -35,6 +35,7 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 #add seed semua daftar anggota dewan
 
 #progress today is making
+Specialization: Ruby On Rails, Project #1, mesin.fatekuvri.ac.id, Server on Heroku, Using Postgresql as Database, Ruby On Rails FrameWorks, HTML5, CSS3 and responsive via bootstrap, Jquery for custom javascript, Monitoring Using New Relic, Bitbucket As repository Git, Dropbox as file folder. In this Project I am a full developer, Both Frontend and Backend. This still on going project.
 
 	<!-- <img src="http://www.rakyatsulsel.com/folder-konten/themes/rakyatsulsel2015/tum.php?src=http://www.rakyatsulsel.com/folder-konten/uploads/2015/09/IMG_20150903_103305.jpg&w=668&h=439" class="img-responsive" alt=""> -->
 
