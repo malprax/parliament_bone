@@ -35,7 +35,14 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 #add seed semua daftar anggota dewan
 
 #progress today is making
-Specialization: Ruby On Rails, Project #1, mesin.fatekuvri.ac.id, Server on Heroku, Using Postgresql as Database, Ruby On Rails FrameWorks, HTML5, CSS3 and responsive via bootstrap, Jquery for custom javascript, Monitoring Using New Relic, Bitbucket As repository Git, Dropbox as file folder. In this Project I am a full developer, Both Frontend and Backend. This still on going project.
+Specialization: Ruby On Rails,
+Project #1, mesin.fatekuvri.ac.id , Server on Heroku, Using Postgresql as Database, Ruby On Rails FrameWorks, HTML5, CSS3 and responsive via bootstrap, Jquery for custom javascript, Monitoring Using New Relic, Bitbucket As repository Git, Dropbox as file folder. In this Project I am a full developer, Both Frontend and Backend. It's pause now but still on going project. It's about Information System For University.
+
+Project #2, yayasanyakin.com , Server on Heroku, Using Postgresql as Database, Ruby On Rails FrameWorks, HTML5, CSS3 and responsive via bootstrap, Jquery for custom javascript, Monitoring Using New Relic, Github As repository Git, Dropbox as file folder. In this Project I am a full developer, Both Frontend and Backend. It's pause now but still on going project. It's about foundation.
+
+Project #3, runiah-school.com , Server on Heroku, Using Postgresql as Database, Ruby On Rails FrameWorks, HTML5, CSS3 and responsive via bootstrap, Jquery for custom javascript, Monitoring Using New Relic, Bitbukcet As repository Git, Cloudflare as optimation, Dropbox as file folder. In this Project I am a full developer, Both Frontend and Backend. It's pause now but still on going project.
+
+progress non again
 
 	<!-- <img src="http://www.rakyatsulsel.com/folder-konten/themes/rakyatsulsel2015/tum.php?src=http://www.rakyatsulsel.com/folder-konten/uploads/2015/09/IMG_20150903_103305.jpg&w=668&h=439" class="img-responsive" alt=""> -->
 
