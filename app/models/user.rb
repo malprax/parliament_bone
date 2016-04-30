@@ -24,16 +24,16 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [:login]
 
   #virtual attribute_for login
-  attr_accessor :login
+  attr_accessor :username
 
   #define login
-  def login=(login)
-   @login = login
-  end
-
-  def login
-   @login || self.username || self.email
-  end
+  # def login=(login)
+  #  @login = login
+  # end
+  #
+  # def login
+  #  @login || self.username || self.email
+  # end
 
   #only allow letter, number, underscore and punctuation
   validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
