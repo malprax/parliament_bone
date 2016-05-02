@@ -70,6 +70,9 @@ end
 #user_authentication
 gem 'devise'
 
+#to activate devise gem
+gem 'strong_parameters'
+
 #editor
 gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
 
