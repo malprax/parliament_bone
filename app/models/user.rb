@@ -18,13 +18,14 @@
 #
 
 class User < ActiveRecord::Base
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
   #virtual attribute_for login
-  attr_accessor :email, :password, :password_confirmation, :remember_me, :username
+  # attr_accessible :email, :password, :password_confirmation, :remember_me, :username
 
   #define login
   # def login=(login)
