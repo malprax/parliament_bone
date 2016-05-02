@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   #virtual attribute_for login
-  attr_accessor :username
+  # attr_accessor :username
 
   #define login
   # def login=(login)
