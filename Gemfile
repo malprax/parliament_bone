@@ -72,6 +72,7 @@ gem 'devise'
 
 #to activate devise gem
 # gem 'strong_parameters'
+gem 'protected_attributes'
 
 #editor
 gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
