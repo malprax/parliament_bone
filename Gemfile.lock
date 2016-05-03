@@ -156,7 +156,6 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    devise-bootstrap-views (0.0.8)
     dropbox-sdk (1.6.5)
       json
     erubis (2.7.0)
@@ -489,7 +488,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   compass-rails (~> 2.0.4)
   devise
-  devise-bootstrap-views
   figaro
   fog
   friendly_id (~> 5.0.0)
