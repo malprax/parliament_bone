@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   #virtual attribute_for login after install gem_protected attributes
-  attr_accessible :username, :email, :password, :password_confirmation, :remember_me
+  #attr_accessible :username, :email, :password, :password_confirmation, :remember_me
 
   #define login
   # def login=(login)
