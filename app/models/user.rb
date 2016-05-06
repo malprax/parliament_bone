@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
   attr_accessor :login
   validate :validate_username
 
-  define login
+  #define login
   def login=(login)
    @login = login
   end
