@@ -71,7 +71,7 @@ end
 gem 'devise'
 
 #to activate devise gem
-gem 'strong_parameters'
+# gem 'strong_parameters'
 # gem 'protected_attributes'
 
 #editor
