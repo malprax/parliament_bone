@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
-  devise_scope :user do
-      get "sign_out", to: "devise/sessions#destroy"
-  end
-
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   resources :parliaments do
     collection { post :upload}
   end
