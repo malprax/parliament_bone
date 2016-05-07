@@ -183,3 +183,4 @@ no progress again stuck
 2. Perbaiki menu berita dengan bisa mengupload file gambar
 3. Koneksikan navigasi
 4. daftar alamat websitenya
+5. minta saran dan kritiknya p idrus
