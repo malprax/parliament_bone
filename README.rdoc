@@ -177,3 +177,9 @@ no progress again stuck
 #hari ini off dulu nda ada kegiatan\
 #hari ini off dulu nda ada kegiatan ada di bandung
 #hari ini mulai lagi sesuatu yang baru buat dprd bone
+
+#progress  tanggal 7 mei 2016
+#1. Perbaiki menu wakil rakyat dengan bisa mengupload file foto
+#2. Perbaiki menu berita dengan bisa mengupload file gambar
+#3. Koneksikan navigasi
+#4. daftar alamat websitenya
