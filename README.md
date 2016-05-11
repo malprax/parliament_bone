@@ -48,3 +48,20 @@ progress non again
 	<!-- <img src="http://www.rakyatsulsel.com/folder-konten/themes/rakyatsulsel2015/tum.php?src=http://www.rakyatsulsel.com/folder-konten/uploads/2015/09/IMG_20150903_103305.jpg&w=668&h=439" class="img-responsive" alt=""> -->
 
   <!-- <img src="http://2.bp.blogspot.com/-0BWY75Vc1vs/VFDzbchcmII/AAAAAAAAAAM/UxE9NWoJSiA/s1600/IMG_9532.JPG" class="img-responsive" alt=""> -->
+cara membuat bros cantik dari pita satin dengan rangkaian mutiara sintetik dan permata imitasi
+How to make beauty brooch from satin ribbon with synthetic pearl and beads
+
+ARsouvenir have a nice tutorial for you again.
+
+You can make a Beauty Greeny Brooch - D.I.Y Kanzashi Flower. It has bright beauty green colour for satin ribbon and synthetic pearls. It's also have beauty shiny beads in the center.
+
+
+
+For mor information and watch another free tutorial brooch, please visit our blog at arsouvenirhome.blogspot.com
+
+Bros Beauty Greeny D I Y Kanzashi Flower, How To make brooch, broche bastante verde, довольно зелены
+
+
+Cara membuat kelopak bros dari pita satin elegan yang cantik dan mudah
+
+make progress with website 
