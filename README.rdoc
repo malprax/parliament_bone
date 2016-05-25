@@ -135,12 +135,6 @@ Project yang harus diselesaikan:
         5. Lampirkan gambar desain baik hard dan soft
         6. Kedeputian III unifa apa yang mau difasilitasi di web info infonya
 
-
-
-
-
-Tambah lagi kerjaan ini sedikit
-
 Good referensi
 I need to build a simple website that does the following:
 
