@@ -22,7 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
+Deployment instructions
+Deployment instructions
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
@@ -151,7 +152,7 @@ I need to build a simple website that does the following:
 
 
 
-NPWP:
+NPWP: 730401353805000
 Kode Akun Pajak: 411128
 Kode Jenis Setor: 420
 KLU : 62090 (Kegiatan Teknologi Informasi Dan Jasa Komputer Lainnya)
