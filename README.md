@@ -43,6 +43,9 @@ Project #2, yayasanyakin.com , Server on Heroku, Using Postgresql as Database, R
 Project #3, runiah-school.com , Server on Heroku, Using Postgresql as Database, Ruby On Rails FrameWorks, HTML5, CSS3 and responsive via bootstrap, Jquery for custom javascript, Monitoring Using New Relic, Bitbukcet As repository Git, Cloudflare as optimation, Dropbox as file folder. In this Project I am a full developer, Both Frontend and Backend. It's pause now but still on going project.
 
 progress non again
+progress non again
+progress non again
+progress non again
 
 
 	<!-- <img src="http://www.rakyatsulsel.com/folder-konten/themes/rakyatsulsel2015/tum.php?src=http://www.rakyatsulsel.com/folder-konten/uploads/2015/09/IMG_20150903_103305.jpg&w=668&h=439" class="img-responsive" alt=""> -->
