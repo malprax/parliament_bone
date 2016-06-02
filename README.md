@@ -72,3 +72,4 @@ Time to make program
 Time to print out billing
 Time to print out mom
 Time to make boot fd
+Time to make posting
