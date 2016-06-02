@@ -69,3 +69,4 @@ Time to Fix Cpu
 Time to dentist
 Time to make apply
 Time to make program
+Time to print out billing 
