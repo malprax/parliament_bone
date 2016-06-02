@@ -65,3 +65,4 @@ Cara membuat kelopak bros dari pita satin elegan yang cantik dan mudah
 Progress Hari ini
 Time to Modify Vaio
 Time to fix mobo
+Time to Fix Cpu
