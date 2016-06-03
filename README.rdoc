@@ -181,3 +181,4 @@ no progress again stuck
 
 need to push comment
 need to write program
+need to render all of part class
