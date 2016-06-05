@@ -73,5 +73,3 @@ Time to Fix Cpu
 
 Time to make apply
 Time to make program
-Time to make boot fd
-Time to make posting
