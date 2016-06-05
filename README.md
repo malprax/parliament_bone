@@ -29,6 +29,10 @@ istirahat dulu hari ini semoga besok bisa lebih lancar
 #progres stuck again this day
 
 #progres stuck again this day
+#progres stuck again this day
+#progres stuck again this day
+
+#progres stuck again this day
 #make email
 #make dropbox
 #add colum for tanggal lahir dan tempat lahir anggota dewan
