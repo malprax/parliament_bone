@@ -70,6 +70,6 @@ Progress Hari ini
 Time to Modify Vaio
 Time to fix mobo
 Time to Fix Cpu
-
 Time to make apply
 Time to make program
+Time to go eat food
