@@ -77,8 +77,3 @@ Time to go eat food
 Time to make brooch
 
 Time to make progress again
-
-Time to make progress again
-Time to make progress again
-Time to make progress again
-Time to make progress again
