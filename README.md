@@ -85,7 +85,7 @@ Time to make progress again
 Time to make progress again
 Time to make progress again
 Time to make progress again
-Time to make progress againTime to make progress again
+Time to make progress again
 Time to make progress again
 Time to make progress again
 Time to make progress again
