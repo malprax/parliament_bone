@@ -75,6 +75,3 @@ Time to make apply
 Time to make program
 Time to go eat food
 Time to make brooch
-
-Time to make progress again
-Time to make progress again
