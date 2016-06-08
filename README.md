@@ -1,3 +1,4 @@
+ada.com
 # parliament_bone
 For sekretariat DPRD Bone
 
@@ -76,3 +77,6 @@ Time to go eat food
 Time to make brooch
 
 Time to make progress again
+
+Time to make progress againTime to make progress again
+Time to make progress againTime to make progress again
