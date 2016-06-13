@@ -84,3 +84,5 @@ Time to make progress again
 cari keypad
 cari kursi contoh kursi
 download dari internet buat presentase besok
+
+buat presentase dengan render semua ruangan lab
