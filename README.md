@@ -89,3 +89,4 @@ buat presentase dengan render semua ruangan lab
 
 push lagi hari ini
 buat rendering gambar lab komputer
+copi data dari macbook white
