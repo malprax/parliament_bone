@@ -86,3 +86,5 @@ cari kursi contoh kursi
 download dari internet buat presentase besok
 
 buat presentase dengan render semua ruangan lab
+
+push lagi hari ini
