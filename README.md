@@ -95,3 +95,4 @@ hapus data di macbook white
 
 ambil paket kiriman
 ambil pelubang kertas
+beli panadol biru
