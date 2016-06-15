@@ -97,3 +97,4 @@ ambil paket kiriman
 ambil pelubang kertas
 beli panadol biru
 cari brosnya riska
+cari info dulu mengenai lazada
