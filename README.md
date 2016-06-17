@@ -96,3 +96,5 @@ hapus data di macbook white
 
 cari info dulu mengenai lazada
 sudah presentase amtiran bro
+
+kerja presentase powerpointnya dulu buat besok ke sekolah lagi
