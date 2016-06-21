@@ -99,3 +99,5 @@ sudah presentase amtiran bro
 
 kerja presentase powerpointnya dulu buat besok ke sekolah lagi
 cara mensubtract di 3ds max
+
+buat flyer kampus baru
