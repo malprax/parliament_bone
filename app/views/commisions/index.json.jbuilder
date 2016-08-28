@@ -1,0 +1,1 @@
+json.array! @commisions, partial: 'commisions/commision', as: :commision

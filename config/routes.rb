@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :commisions
+  resources :fractions
   devise_for :users  #, :path => '', :path_names => {:sign_in => 'sign_in', :sign_out => 'sign_out'}
   resources :parliaments do
     collection { post :upload}

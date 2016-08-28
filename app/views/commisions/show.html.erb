@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @commision.name %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @commision.position %>
+</p>
+
+<%= link_to 'Edit', edit_commision_path(@commision) %> |
+<%= link_to 'Back', commisions_path %>
