@@ -10,6 +10,7 @@ class FractionsController < ApplicationController
   # GET /fractions/1
   # GET /fractions/1.json
   def show
+    @parliaments = @fraction.parliaments
   end
 
   # GET /fractions/new

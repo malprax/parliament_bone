@@ -6,14 +6,14 @@
     <%#= f.input :avatar, as: :image_preview, input_html: {preview_version: :thumb}, label: "Foto Anggota" %>
     <%= f.input :name, label: "Nama" %>
     <%= f.input :dapil, label: "Daerah Pemilihan", collection: ["I", "II", "III", "IV", "V"] %>
-    <%= f.input :fraksi, label: "Fraksi" %>
-    <%= f.input :jabatan_fraksi, collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"], as: :string, include_blank: false  %>
-    <%= f.input :komisi, label: "Komisi" %>
-    <%= f.input :jabatan_komisi, label: "Jabatan Komisi", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
-    <%= f.input :jabatan_badan_anggaran, label: "Badan Anggaran", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
-    <%= f.input :jabatan_badan_musyawarah, label: "Badan Musyawarah", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
-    <%= f.input :jabatan_badan_kehormatan, label: "Badan Kehormatan", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
-    <%= f.input :jabatan_badan_legislatif, label: "Badan Legislatif", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
+    <%= f.association :fraction, label: "Fraksi" %>
+    <%#= f.input :jabatan_fraksi, collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"], as: :string, include_blank: false  %>
+    <%#= f.input :komisi, label: "Komisi" %>
+    <%#= f.input :jabatan_komisi, label: "Jabatan Komisi", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
+    <%#= f.input :jabatan_badan_anggaran, label: "Badan Anggaran", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
+    <%#= f.input :jabatan_badan_musyawarah, label: "Badan Musyawarah", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
+    <%#= f.input :jabatan_badan_kehormatan, label: "Badan Kehormatan", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
+    <%#= f.input :jabatan_badan_legislatif, label: "Badan Legislatif", collection: ["Penasehat", "Ketua", "Wakil Ketua", "Sekertaris", "Bendahara", "Anggota"]  %>
   </div>
 
   <div class="form-actions">

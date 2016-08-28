@@ -31,6 +31,7 @@ class ParliamentsController < ApplicationController
   # GET /parliaments
   # GET /parliaments.json
   def index
+    @fractions = Fraction.all
     @parliaments = Parliament.paginate(:page => params[:page], :per_page => 9)
     @allparliaments = Parliament.order("created_at asc")
     respond_to do |format|
@@ -103,6 +104,7 @@ class ParliamentsController < ApplicationController
   def fraksi
     #code
     @parliaments = Parliament.all
+    @fractions = Fraction.all
   end
 
   def komisi
