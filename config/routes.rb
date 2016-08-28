@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   devise_for :users  #, :path => '', :path_names => {:sign_in => 'sign_in', :sign_out => 'sign_out'}
   resources :parliaments do
     collection { post :upload}
+    collection do
+      get 'fraksi' => 'parliaments#fraksi', as: :fraksi
+      get 'komisi' => 'parliaments#komisi', as: :komisi
+    end
   end
   # menu wakil rakyat
   get '/anggota_wakil_rakyat' => 'parliaments#index', as: :anggota_wakil_rakyat

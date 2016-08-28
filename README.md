@@ -102,3 +102,10 @@ cara mensubtract di 3ds max
 
 buat flyer kampus baru
 buat spnaduk ukuran besar
+
+
+#sambutan ketua DPRD Kabupaten Bone
+Mengapresiasi keberadaan website ini sebagai portal info kebijakan yang dipimpin oleh website
+
+harus ada fraksi bisa diedit nama jabatan nama_fraksi
+harus ada komisi bisa diedit nama jabatan nama_komisi

@@ -100,6 +100,14 @@ class ParliamentsController < ApplicationController
     end
   end
 
+  def fraksi
+    #code
+    @parliaments = Parliament.all
+  end
+
+  def komisi
+    #code
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_parliament
