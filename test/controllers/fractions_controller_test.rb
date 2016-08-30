@@ -18,7 +18,7 @@ class FractionsControllerTest < ActionController::TestCase
 
   test "should create fraction" do
     assert_difference('Fraction.count') do
-      post :create, fraction: { name: @fraction.name, position: @fraction.position }
+      post :create, fraction: { name: @fraction.name }
     end
 
     assert_redirected_to fraction_path(assigns(:fraction))
@@ -35,7 +35,7 @@ class FractionsControllerTest < ActionController::TestCase
   end
 
   test "should update fraction" do
-    patch :update, id: @fraction, fraction: { name: @fraction.name, position: @fraction.position }
+    patch :update, id: @fraction, fraction: { name: @fraction.name }
     assert_redirected_to fraction_path(assigns(:fraction))
   end
 
