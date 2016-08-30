@@ -32,7 +32,8 @@ class ParliamentsController < ApplicationController
   # GET /parliaments.json
   def index
     @fractions = Fraction.all
-    @parliaments = Parliament.paginate(:page => params[:page], :per_page => 9)
+    # @fraction = Fraction.find(params[:id])
+    @parliaments = Parliament.paginate(:page => params[:page], :per_page => 9).order("created_at asc")
     @allparliaments = Parliament.order("created_at asc")
     respond_to do |format|
         format.html # don't forget if you pass html

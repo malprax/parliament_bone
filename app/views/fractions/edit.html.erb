@@ -1,6 +1,16 @@
-<h1>Editing Fraction</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @fraction %> |
-<%= link_to 'Back', fractions_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-md-6">
+      <h3 class="lead">Edit Fraksi</h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-md-6">
+      <%= render 'form' %>
+      <%= link_to 'Back', fractions_path, class: "btn btn-success" %>
+    </div>
+  </div>
+  <br>
+  <br>
+</div>

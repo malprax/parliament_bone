@@ -28,7 +28,7 @@ class FractionsController < ApplicationController
 
     respond_to do |format|
       if @fraction.save
-        format.html { redirect_to @fraction, notice: 'Fraction was successfully created.' }
+        format.html { redirect_to fractions_path, notice: 'Fraction was successfully created.' }
         format.json { render :show, status: :created, location: @fraction }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class FractionsController < ApplicationController
   def update
     respond_to do |format|
       if @fraction.update(fraction_params)
-        format.html { redirect_to @fraction, notice: 'Fraction was successfully updated.' }
+        format.html { redirect_to fractions_path, notice: 'Fraction was successfully updated.' }
         format.json { render :show, status: :ok, location: @fraction }
       else
         format.html { render :edit }
