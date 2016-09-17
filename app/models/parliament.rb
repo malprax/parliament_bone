@@ -14,8 +14,9 @@
 #
 
 class Parliament < ActiveRecord::Base
+has_many :member_fractions
 has_many :member_commisions
-belongs_to :fraction
+belongs_to :dapil
 belongs_to :legislation
 
 
