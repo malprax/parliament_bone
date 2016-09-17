@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  def profil
+  def fungsi
   end
 
   def sejarah

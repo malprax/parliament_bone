@@ -1,5 +1,9 @@
+<h3 class='lead'>Komisi</h3>
 <ul class="list-group">
   <% @commisions.each do |commision| %>
-  <li class="list-group-item"><%= link_to commision.name.upcase, commision_path(commision.id), class: 'list-group-item' %></li>
+  <li class="list-group-item"><%= link_to commision.name.upcase, commision_path(commision.id) %></li>
   <% end %>
 </ul>
+<% if params[:controller] == 'commisions' && params[:action] == 'show' %>
+<%= link_to 'SEMUA KOMISI', member_commisions_path, class:'btn btn-default' %>
+<% end %>

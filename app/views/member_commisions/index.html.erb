@@ -34,11 +34,7 @@
 
     </div>
     <div class='col-sm-4 col-md-4'>
-      <ul class="list-group">
-        <% @commisions.each do |commision| %>
-        <li class="list-group-item"><%= link_to commision.name, commision_path(commision.id) %></li>
-        <% end %>
-      </ul>
+        <%= render 'shared/komisi_panel' %>
     </div>
   </div>
 </div>
