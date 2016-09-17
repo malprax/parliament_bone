@@ -31,7 +31,7 @@
           <ul class="dropdown-menu">
             <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Anggota", anggota_wakil_rakyat_path %></li>
             <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Komisi", member_commisions_path %></li>
-            <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Fraksi", fraksi_parliaments_path %></li>
+            <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Fraksi", member_fractions_path %></li>
             <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Alat Dan Kelengkapan", alat_dan_kelengkapan_path %></li>
           </ul>
         </li>
@@ -48,12 +48,13 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class='glyphicon glyphicon-cog'></span> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><%= link_to "Nama Komisi", commisions_path %></li>
-            <li><%= link_to "Nama Jabatan", structurals_path %></li>
-            <li><%= link_to "Nama Fraksi", fractions_path %></li>
-            <li><%= link_to "Halaman", "#" %></li>
+            <li><%= link_to "Atur Komisi", commisions_path %></li>
+            <li><%= link_to "Atur Jabatan", structurals_path %></li>
+            <li><%= link_to "Atur Fraksi", fractions_path %></li>
+            <li><%= link_to "Atur Dapil", dapils_path %></li>
+            <li><%= link_to "Atur Halaman", "#" %></li>
           </ul>
         </li>
         <% if user_signed_in? %>

@@ -1,0 +1,13 @@
+<%= simple_form_for(@member_fraction) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :parliament, label: 'Nama', label_method: :name %>
+    <%= f.association :structural %>
+    <%= f.association :fraction %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class:'btn btn-success' %>&nbsp;&nbsp;<%= link_to 'Kembali', member_fractions_path, class:'btn btn-default' %>
+  </div>
+<% end %>

@@ -15,7 +15,7 @@
           <tbody>
             <% @structurals.each do |structural| %>
               <tr>
-                <td><%= structural.name %></td>
+                <td><%= structural.name.titlecase %></td>
                 <td><%= link_to 'Edit', edit_structural_path(structural) %></td>
                 <td><%= link_to 'Hapus', structural, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               </tr>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :member_fractions
   resources :structurals
   resources :member_commisions
   resources :fractions

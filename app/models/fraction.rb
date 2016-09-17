@@ -1,3 +1,4 @@
 class Fraction < ActiveRecord::Base
-  has_many :parliaments
+  has_many :member_fractions
+
 end

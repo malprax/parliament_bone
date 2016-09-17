@@ -182,3 +182,7 @@ no progress again stuck
 need to push comment
 need to write program
 need to render all of part class
+
+
+#progress 17 september 2016
+connect dropbox_image

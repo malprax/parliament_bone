@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parliament:</strong>
+  <%= @member_fraction.parliament_id %>
+</p>
+
+<p>
+  <strong>Structural:</strong>
+  <%= @member_fraction.structural_id %>
+</p>
+
+<p>
+  <strong>Fraction:</strong>
+  <%= @member_fraction.fraction_id %>
+</p>
+
+<%= link_to 'Edit', edit_member_fraction_path(@member_fraction) %> |
+<%= link_to 'Back', member_fractions_path %>

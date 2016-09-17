@@ -1,0 +1,1 @@
+json.partial! "member_fractions/member_fraction", member_fraction: @member_fraction

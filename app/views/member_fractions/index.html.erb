@@ -1,0 +1,35 @@
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-sm-12 col-md-12'>
+      <% if @member_fractions.present? %>
+      <h3 class='lead'>Daftar Anggota Fraksi&nbsp;&nbsp;<%= link_to 'Buat Anggota', new_member_fraction_path, class:'btn btn-default' %></h3>
+
+      <table class='table table-hover table-striped'>
+        <thead>
+          <tr>
+            <th>Fraksi</th>
+            <th>Nama</th>
+            <th>Jabatan</th>
+            <th colspan="1"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @member_fractions.each do |member_fraction| %>
+            <tr>
+              <td><%= member_fraction.fraction.name %></td>
+              <td><%= member_fraction.parliament.name %></td>
+              <td><%= member_fraction.structural.name %></td>
+              <td><%= link_to 'Edit', edit_member_fraction_path(member_fraction), class:'btn btn-warning' %>&nbsp;&nbsp;<%= link_to 'Destroy', member_fraction, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br>
+      <% else %>
+      <h3 class='lead'>Maaf Data Yang Anda Cari Belum Ada ..&nbsp;&nbsp;<%= link_to 'Buat Anggota', new_member_fraction_path, class:'btn btn-default' %></h3>
+      <% end %>
+    </div>
+  </div>
+</div>
