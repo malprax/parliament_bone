@@ -1,6 +1,6 @@
 <div class='container-fluid'>
   <div class='row'>
-    <div class='col-sm-12 col-md-12'>
+    <div class='col-sm-8 col-md-8'>
       <% if @member_commisions.present? %>
       <h3 class='lead'>Daftar Komisi DPRD Bone&nbsp;&nbsp;<%= link_to 'Buat Anggota Komisi', new_member_commision_path, class: 'btn btn-default' %></h3>
 
@@ -10,7 +10,7 @@
             <th>Komisi</th>
             <th>Nama</th>
             <th>Jabatan</th>
-            <th colspan="2"></th>
+            <th colspan="1"></th>
           </tr>
         </thead>
 
@@ -20,8 +20,8 @@
               <td><%= member_commision.commision.name %></td>
               <td><%= member_commision.parliament.name %></td>
               <td><%= member_commision.structural.name %></td>
-              <td><%= link_to 'Edit', edit_member_commision_path(member_commision) %></td>
-              <td><%= link_to 'Hapus', member_commision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Edit', edit_member_commision_path(member_commision), class:'btn btn-warning' %>&nbsp;&nbsp;<%= link_to 'Hapus', member_commision, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %></td>
+
             </tr>
           <% end %>
         </tbody>
@@ -32,6 +32,13 @@
       <h3 class='lead'>Maaf Data Yang Anda Cari Belum Ada ..&nbsp;&nbsp;<%= link_to 'Buat Anggota Komisi', new_member_commision_path, class: 'btn btn-default' %></h3>
       <% end %>
 
+    </div>
+    <div class='col-sm-4 col-md-4'>
+      <ul class="list-group">
+        <% @commisions.each do |commision| %>
+        <li class="list-group-item"><%= link_to commision.name, commision_path(commision.id) %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>

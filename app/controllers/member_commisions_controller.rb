@@ -5,6 +5,7 @@ class MemberCommisionsController < ApplicationController
   # GET /member_commisions.json
   def index
     @member_commisions = MemberCommision.all
+    @commisions = Commision.all
   end
 
   # GET /member_commisions/1
@@ -28,7 +29,7 @@ class MemberCommisionsController < ApplicationController
 
     respond_to do |format|
       if @member_commision.save
-        format.html { redirect_to @member_commision, notice: 'Member commision was successfully created.' }
+        format.html { redirect_to member_commisions_path, notice: 'Member commision was successfully created.' }
         format.json { render :show, status: :created, location: @member_commision }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class MemberCommisionsController < ApplicationController
   def update
     respond_to do |format|
       if @member_commision.update(member_commision_params)
-        format.html { redirect_to @member_commision, notice: 'Member commision was successfully updated.' }
+        format.html { redirect_to member_commisions_path, notice: 'Member commision was successfully updated.' }
         format.json { render :show, status: :ok, location: @member_commision }
       else
         format.html { render :edit }

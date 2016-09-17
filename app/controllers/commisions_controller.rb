@@ -10,8 +10,11 @@ class CommisionsController < ApplicationController
   # GET /commisions/1
   # GET /commisions/1.json
   def show
-    @parliaments = Parliament.all
-    @commision = @commision.parliaments
+    @commisions = Commision.all
+    @member_commision = MemberCommision.find(params[:member_commision_id])
+    # @parliament = Parliament.
+    @commision = @commision.member_comission
+
   end
 
   # GET /commisions/new
@@ -30,7 +33,7 @@ class CommisionsController < ApplicationController
 
     respond_to do |format|
       if @commision.save
-        format.html { redirect_to @commision, notice: 'Commision was successfully created.' }
+        format.html { redirect_to commisions_path, notice: 'Commision was successfully created.' }
         format.json { render :show, status: :created, location: @commision }
       else
         format.html { render :new }
@@ -44,7 +47,7 @@ class CommisionsController < ApplicationController
   def update
     respond_to do |format|
       if @commision.update(commision_params)
-        format.html { redirect_to @commision, notice: 'Commision was successfully updated.' }
+        format.html { redirect_to commisions_path, notice: 'Commision was successfully updated.' }
         format.json { render :show, status: :ok, location: @commision }
       else
         format.html { render :edit }

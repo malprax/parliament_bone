@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class='row'>
-    <div class='col-sm-12 col-md-12'>
+    <div class='col-sm-8 col-md-8'>
       <% if @commisions.present? %>
       <h3 class="lead">Daftar Komisi DPRD&nbsp;&nbsp;<%= link_to 'Buat Komisi', new_commision_path, class: 'btn btn-default' %></h3>
 
@@ -8,7 +8,7 @@
         <thead>
           <tr>
             <th>Nama</th>
-            <th colspan="2"></th>
+            <th colspan="1"></th>
           </tr>
         </thead>
 
@@ -16,8 +16,7 @@
           <% @commisions.each do |commision| %>
             <tr>
               <td><%= commision.name.titleize %></td>
-              <td><%= link_to 'Edit', edit_commision_path(commision) %></td>
-              <td><%= link_to 'Hapus', commision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Edit', edit_commision_path(commision) %>&nbsp;&nbsp;<%= link_to 'Hapus', commision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
         </tbody>
@@ -27,6 +26,13 @@
       <% else %>
       <h3 class='lead'>Maaf Data Yang Anda Cari Belum Ada ..&nbsp;&nbsp;<%= link_to 'Buat Komisi', new_commision_path, class: 'btn btn-default' %></h3>
       <% end %>
+    </div>
+    <div class='col-sm-4 col-md-4'>
+      <ul class="list-group">
+        <% @commisions.each do |commision| %>
+        <li class="list-group-item"><%= link_to commision.name, commision_path(commision.id) %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>

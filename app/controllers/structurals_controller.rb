@@ -28,7 +28,7 @@ class StructuralsController < ApplicationController
 
     respond_to do |format|
       if @structural.save
-        format.html { redirect_to @structural, notice: 'Structural was successfully created.' }
+        format.html { redirect_to structurals_path, notice: 'Structural was successfully created.' }
         format.json { render :show, status: :created, location: @structural }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class StructuralsController < ApplicationController
   def update
     respond_to do |format|
       if @structural.update(structural_params)
-        format.html { redirect_to @structural, notice: 'Structural was successfully updated.' }
+        format.html { redirect_to structurals_path, notice: 'Structural was successfully updated.' }
         format.json { render :show, status: :ok, location: @structural }
       else
         format.html { render :edit }
