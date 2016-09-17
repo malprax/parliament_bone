@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parliament:</strong>
+  <%= @member_commision.parliament_id %>
+</p>
+
+<p>
+  <strong>Commision:</strong>
+  <%= @member_commision.commision_id %>
+</p>
+
+<p>
+  <strong>Structural:</strong>
+  <%= @member_commision.structural_id %>
+</p>
+
+<%= link_to 'Edit', edit_member_commision_path(@member_commision) %> |
+<%= link_to 'Back', member_commisions_path %>

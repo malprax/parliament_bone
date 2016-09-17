@@ -10,6 +10,6 @@
 #
 
 class Commision < ActiveRecord::Base
-  has_many :parliaments
+  has_many :member_commisions 
   # validates_presence_of :name
 end

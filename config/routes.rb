@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :structurals
+  resources :member_commisions
   resources :fractions
   namespace :admin do
       resources :parliaments

@@ -1,5 +1,5 @@
 class CommisionsController < ApplicationController
-  before_action :set_commision, only: [:show, :edit, :update, :destroy]
+  before_action :set_commision, only: [:edit, :update, :destroy]
 
   # GET /commisions
   # GET /commisions.json
@@ -10,6 +10,8 @@ class CommisionsController < ApplicationController
   # GET /commisions/1
   # GET /commisions/1.json
   def show
+    @parliaments = Parliament.all
+    @commision = @commision.parliaments
   end
 
   # GET /commisions/new
@@ -69,6 +71,6 @@ class CommisionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def commision_params
-      params.require(:commision).permit(:name, :position)
+      params.require(:commision).permit(:name, :position, :parliament_id)
     end
 end

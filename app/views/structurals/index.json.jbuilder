@@ -1,0 +1,1 @@
+json.array! @structurals, partial: 'structurals/structural', as: :structural

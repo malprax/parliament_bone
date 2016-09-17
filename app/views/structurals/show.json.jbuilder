@@ -1,0 +1,1 @@
+json.partial! "structurals/structural", structural: @structural

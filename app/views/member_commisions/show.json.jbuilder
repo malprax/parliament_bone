@@ -1,0 +1,1 @@
+json.partial! "member_commisions/member_commision", member_commision: @member_commision

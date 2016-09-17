@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parliament_id: MyString
+  commision_id: MyString
+  structural_id: MyString
+
+two:
+  parliament_id: MyString
+  commision_id: MyString
+  structural_id: MyString

@@ -1,0 +1,13 @@
+<%= simple_form_for(@member_commision) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :commision, label_method: :name, label: 'Komisi' %>
+    <%= f.association :parliament, label_method: :name, label: 'Nama' %>
+    <%= f.association :structural, label_method: :name, label: 'Jabatan' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

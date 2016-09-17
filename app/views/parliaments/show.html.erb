@@ -17,61 +17,61 @@
     </p>
     <% end %>
 
-    <% if @parliament.fraksi? %>
+    <%# if @parliament.fraction? %>
     <p>
       <strong>Fraksi:</strong>
-      <%= @parliament.fraksi %>
+      <%#= @parliament.fraction.name %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if @parliament.jabatan_fraksi? %>
+    <%# if @parliament.jabatan_fraksi? %>
     <p>
       <strong>Jabatan fraksi:</strong>
-      <%= @parliament.jabatan_fraksi %>
+      <%#= @parliament.jabatan_fraksi %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if @parliament.komisi? %>
+    <%# if @parliament.komisi? %>
     <p>
       <strong>Komisi:</strong>
-      <%= @parliament.komisi %>
+      <%#= @parliament.komisi %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if @parliament.jabatan_komisi? %>
+    <%# if @parliament.jabatan_komisi? %>
     <p>
       <strong>Jabatan komisi:</strong>
-      <%= @parliament.jabatan_komisi %>
+      <%#= @parliament.jabatan_komisi %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if @parliament.jabatan_badan_anggaran? %>
+    <%# if @parliament.jabatan_badan_anggaran? %>
     <p>
       <strong>Jabatan badan anggaran:</strong>
-      <%= @parliament.jabatan_badan_anggaran %>
+      <%#= @parliament.jabatan_badan_anggaran %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if@parliament.jabatan_badan_musyawarah? %>
+    <%# if@parliament.jabatan_badan_musyawarah? %>
     <p>
       <strong>Jabatan badan musyawarah:</strong>
-      <%= @parliament.jabatan_badan_musyawarah %>
+      <%#= @parliament.jabatan_badan_musyawarah %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if @parliament.jabatan_badan_kehormatan? %>
+    <%# if @parliament.jabatan_badan_kehormatan? %>
     <p>
       <strong>Jabatan badan kehormatan:</strong>
-      <%= @parliament.jabatan_badan_kehormatan %>
+      <%#= @parliament.jabatan_badan_kehormatan %>
     </p>
-    <% end %>
+    <%# end %>
 
-    <% if @parliament.jabatan_badan_legislatif? %>
+    <%# if @parliament.jabatan_badan_legislatif? %>
     <p>
       <strong>Jabatan badan legislatif:</strong>
-      <%= @parliament.jabatan_badan_legislatif %>
+      <%#= @parliament.jabatan_badan_legislatif %>
     </p>
-    <% end %>
+    <%# end %>
   </div>
   <div class="col-sm-12 col-md-12 col-xs-12">
     <%= link_to 'Edit', edit_parliament_path(@parliament), class: "btn btn-warning"%> &nbsp;
