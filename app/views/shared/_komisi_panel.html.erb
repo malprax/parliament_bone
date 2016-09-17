@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <% @commisions.each do |commision| %>
+  <li class="list-group-item"><%= link_to commision.name.upcase, commision_path(commision.id), class: 'list-group-item' %></li>
+  <% end %>
+</ul>

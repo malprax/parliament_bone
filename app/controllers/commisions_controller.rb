@@ -10,10 +10,11 @@ class CommisionsController < ApplicationController
   # GET /commisions/1
   # GET /commisions/1.json
   def show
-    @commisions = Commision.all
-    @member_commision = MemberCommision.find(params[:member_commision_id])
+    @commision = Commision.find(params[:id])
+    # @member_commision = MemberCommision.find(params[:member_commision_id])
     # @parliament = Parliament.
-    @commision = @commision.member_comission
+    @commisions = Commision.all
+    @member_commisions = @commision.member_commisions
 
   end
 

@@ -1,20 +1,32 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8">
-    <% @commision.each do |commision| %>
-      <h3 class="lead"><%= commision.name %></h3>
 
-    <% end %>
+      <h3 class="lead"><%= @commision.name.upcase %></h3>
+      <table class='table table-hover table-striped'>
+        <tr>
+          <th>Nama</th>
+          <th>Jabatan</th>
+        </tr>
+        <tr>
+          <% @member_commisions.each do |member_commision| %>
+          <td><%= member_commision.parliament.name %></td>
+          <td><%= member_commision.structural.name.titleize %></td>
+          <% end %>
+        </tr>
+      </table>
+      <br />
+
+
+
+
+      <%= link_to 'Edit', edit_commision_path(@commision), class: 'btn btn-warning' %>&nbsp;&nbsp;
+      <%= link_to 'Kembali', member_commisions_path, class: 'btn btn-default' %>
+
+
     </div>
-    <div class="col-sm-12 col-md-4">
-      <ul class="list-group">
-        <% @commisions.each do |commision| %>
-        <li class="list-group-item"><%= link_to commision.name, commision_path(commision.id) %></li>
-        <% end %>
-      </ul>
+    <div class="col-sm-4 col-md-4">
+      <%= render 'shared/komisi_panel' %>
     </div>
   </div>
 </div>
-
-<%= link_to 'Edit', edit_commision_path(@commision) %> |
-<%= link_to 'Back', commisions_path %>
