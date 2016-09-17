@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class='row'>
-    <div class='col-sm-8 col-md-8'>
+    <div class='col-sm-12 col-md-12'>
       <% if @commisions.present? %>
       <h3 class="lead">Daftar Komisi DPRD&nbsp;&nbsp;<%= link_to 'Buat Komisi', new_commision_path, class: 'btn btn-default' %></h3>
 
@@ -15,8 +15,8 @@
         <tbody>
           <% @commisions.each do |commision| %>
             <tr>
-              <td><%= commision.name.titleize %></td>
-              <td><%= link_to 'Edit', edit_commision_path(commision) %>&nbsp;&nbsp;<%= link_to 'Hapus', commision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= commision.name.upcase %></td>
+              <td><%= link_to 'Edit', edit_commision_path(commision), class: 'btn btn-warning' %>&nbsp;&nbsp;<%= link_to 'Hapus', commision, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %></td>
             </tr>
           <% end %>
         </tbody>
@@ -27,12 +27,6 @@
       <h3 class='lead'>Maaf Data Yang Anda Cari Belum Ada ..&nbsp;&nbsp;<%= link_to 'Buat Komisi', new_commision_path, class: 'btn btn-default' %></h3>
       <% end %>
     </div>
-    <div class='col-sm-4 col-md-4'>
-      <ul class="list-group">
-        <% @commisions.each do |commision| %>
-        <li class="list-group-item"><%= link_to commision.name, commision_path(commision.id) %></li>
-        <% end %>
-      </ul>
-    </div>
+
   </div>
 </div>
