@@ -1,15 +1,10 @@
 class DapilsController < ApplicationController
-  before_action :set_dapil, only: [:show, :edit, :update, :destroy]
+  before_action :set_dapil, only: [:edit, :update, :destroy]
 
   # GET /dapils
   # GET /dapils.json
   def index
-    @dapils = Dapil.all
-  end
-
-  # GET /dapils/1
-  # GET /dapils/1.json
-  def show
+    @dapils = Dapil.order('created_at asc')
   end
 
   # GET /dapils/new
@@ -28,7 +23,7 @@ class DapilsController < ApplicationController
 
     respond_to do |format|
       if @dapil.save
-        format.html { redirect_to @dapil, notice: 'Dapil was successfully created.' }
+        format.html { redirect_to dapils_path, notice: 'Dapil was successfully created.' }
         format.json { render :show, status: :created, location: @dapil }
       else
         format.html { render :new }
@@ -42,7 +37,7 @@ class DapilsController < ApplicationController
   def update
     respond_to do |format|
       if @dapil.update(dapil_params)
-        format.html { redirect_to @dapil, notice: 'Dapil was successfully updated.' }
+        format.html { redirect_to dapils_path, notice: 'Dapil was successfully updated.' }
         format.json { render :show, status: :ok, location: @dapil }
       else
         format.html { render :edit }
