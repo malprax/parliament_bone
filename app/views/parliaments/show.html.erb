@@ -13,65 +13,11 @@
     <% if @parliament.dapil? %>
     <p>
       <strong>Dapil:</strong>
-      <%= @parliament.dapil %>
+      <%= @parliament.dapil.name %>
     </p>
     <% end %>
 
-    <%# if @parliament.fraction? %>
-    <p>
-      <strong>Fraksi:</strong>
-      <%#= @parliament.fraction.name %>
-    </p>
-    <%# end %>
 
-    <%# if @parliament.jabatan_fraksi? %>
-    <p>
-      <strong>Jabatan fraksi:</strong>
-      <%#= @parliament.jabatan_fraksi %>
-    </p>
-    <%# end %>
-
-    <%# if @parliament.komisi? %>
-    <p>
-      <strong>Komisi:</strong>
-      <%#= @parliament.komisi %>
-    </p>
-    <%# end %>
-
-    <%# if @parliament.jabatan_komisi? %>
-    <p>
-      <strong>Jabatan komisi:</strong>
-      <%#= @parliament.jabatan_komisi %>
-    </p>
-    <%# end %>
-
-    <%# if @parliament.jabatan_badan_anggaran? %>
-    <p>
-      <strong>Jabatan badan anggaran:</strong>
-      <%#= @parliament.jabatan_badan_anggaran %>
-    </p>
-    <%# end %>
-
-    <%# if@parliament.jabatan_badan_musyawarah? %>
-    <p>
-      <strong>Jabatan badan musyawarah:</strong>
-      <%#= @parliament.jabatan_badan_musyawarah %>
-    </p>
-    <%# end %>
-
-    <%# if @parliament.jabatan_badan_kehormatan? %>
-    <p>
-      <strong>Jabatan badan kehormatan:</strong>
-      <%#= @parliament.jabatan_badan_kehormatan %>
-    </p>
-    <%# end %>
-
-    <%# if @parliament.jabatan_badan_legislatif? %>
-    <p>
-      <strong>Jabatan badan legislatif:</strong>
-      <%#= @parliament.jabatan_badan_legislatif %>
-    </p>
-    <%# end %>
   </div>
   <div class="col-sm-12 col-md-12 col-xs-12">
     <%= link_to 'Edit', edit_parliament_path(@parliament), class: "btn btn-warning"%> &nbsp;

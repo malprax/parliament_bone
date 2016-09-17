@@ -102,15 +102,7 @@ class ParliamentsController < ApplicationController
     end
   end
 
-  def fraksi
-    #code
-    @parliaments = Parliament.all
-    @fractions = Fraction.all
-  end
-
-  def komisi
-    #code
-  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_parliament
@@ -119,6 +111,6 @@ class ParliamentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def parliament_params
-      params.require(:parliament).permit(:name, :dapil, :fraksi, :jabatan_fraksi, :komisi, :jabatan_komisi, :jabatan_badan_anggaran, :jabatan_badan_musyawarah, :jabatan_badan_kehormatan, :jabatan_badan_legislatif, :avatar, :file)
+      params.require(:parliament).permit(:name, :tanggal_lahir, :tempat_lahir, :dapil_id, :avatar, :file)
     end
 end

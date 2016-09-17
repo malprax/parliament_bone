@@ -6,11 +6,9 @@
 #  name          :string
 #  tempat_lahir  :string
 #  tanggal_lahir :string
-#  dapil         :string
+#  dapil_id      :integer
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
-#  fraction_id   :string
-#  commision_id  :string
 #
 
 require 'test_helper'
