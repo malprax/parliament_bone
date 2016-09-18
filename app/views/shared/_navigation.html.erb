@@ -30,8 +30,8 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wakil Rakyat <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Anggota", anggota_wakil_rakyat_path %></li>
-            <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Komisi", member_commisions_path %></li>
-            <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Fraksi", member_fractions_path %></li>
+            <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Komisi", commisions_path %></li>
+            <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Fraksi", fractions_path %></li>
             <li class="<%= params[:action]=='alat_dan_kelengkapan' ? 'active' : '' %>"><%= link_to "Alat Dan Kelengkapan", alat_dan_kelengkapan_path %></li>
           </ul>
         </li>

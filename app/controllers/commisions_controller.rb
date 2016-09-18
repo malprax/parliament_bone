@@ -5,6 +5,8 @@ class CommisionsController < ApplicationController
   # GET /commisions.json
   def index
     @commisions = Commision.all
+    # @commision = Commision.find(params[:id])
+    # @member_commisions = @commision.member_commisions
   end
 
   # GET /commisions/1

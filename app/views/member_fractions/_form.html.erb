@@ -3,8 +3,8 @@
 
   <div class="form-inputs">
     <%= f.association :parliament, label: 'Nama', label_method: :name %>
-    <%= f.association :structural %>
-    <%= f.association :fraction %>
+    <%= f.association :structural, label:'Jabatan', label_method: lambda {|structural| "#{structural.name.titleize}"} %>
+    <%= f.association :fraction, label:'Fraksi', label_method: lambda{|fraction|"#{fraction.name.titleize}"} %>
   </div>
 
   <div class="form-actions">
