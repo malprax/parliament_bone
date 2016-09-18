@@ -186,3 +186,9 @@ need to render all of part class
 
 #progress 17 september 2016
 connect dropbox_image
+
+#progress 18 september 2016
+fokus buat nested form di dalam komisi
+connect dropbox_image
+buat email dprdbone
+buat laman posting berita
