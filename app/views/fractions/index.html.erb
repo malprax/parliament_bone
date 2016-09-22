@@ -14,7 +14,7 @@
         <tbody>
           <% @fractions.each do |fraction| %>
             <tr>
-              <td><%= fraction.name.titleize if fraction %></td>
+              <td><%= link_to fraction.name.titleize, fraction if fraction %></td>
               <td><%= link_to 'Edit', edit_fraction_path(fraction), class: 'btn btn-warning' %>&nbsp; &nbsp;<%= link_to 'Hapus', fraction, method: :delete, data: { confirm: 'Anda Yakin Hapus?' }, class: 'btn btn-danger' %></td>
             </tr>
           <% end %>

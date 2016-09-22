@@ -1,9 +1,32 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
 
-<p>
-  <strong>Name:</strong>
-  <%= @fraction.name %>
-</p>
+      <h3 class="lead"><%= @fraction.name.upcase %>&nbsp;&nbsp;<%= link_to 'Buat Fraksi', new_member_fraction_path, class:'btn btn-success' %></h3>
+      <table class='table table-hover table-striped'>
+        <tr>
+          <th>Fraksi</th>
+          <th>Anggota</th>
+        </tr>
+        <tr>
+          <%# @member_fractions.each do |member_fraction| %>
+          <td><%#= member_fraction.parliament.name rescue nil %></td>
+          <td><%#= member_fraction.structural.name.titleize  rescue nil %></td>
+          <%# end %>
+        </tr>
+      </table>
+      <br />
 
-<%= link_to 'Edit', edit_fraction_path(@fraction) %> |
-<%= link_to 'Back', fractions_path %>
+
+
+
+      <%= link_to 'Edit', edit_fraction_path(@fraction), class: 'btn btn-warning' %>&nbsp;&nbsp;
+      <%#= link_to 'Kembali', member_fractions_path, class: 'btn btn-default' %>
+
+
+    </div>
+    <div class="col-sm-4 col-md-4">
+      <%= render 'shared/fraksi_panel' %>
+    </div>
+  </div>
+</div>

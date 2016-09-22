@@ -1,4 +1,9 @@
-<% @fractions.each do |fraction| %>
-    
-    <%= link_to fraction.name, fraction_path(fraction.id) %>
+<h3 class='lead'>Komisi</h3>
+<ul class="list-group">
+  <% @fractions.each do |fraction| %>
+  <li class="list-group-item"><%= link_to fraction.name.upcase, fraction_path(fraction.id) %></li>
+  <% end %>
+</ul>
+<% if params[:controller] == 'fractions' && params[:action] == 'show' %>
+<%= link_to 'SEMUA FRAKSI', fractions_path, class:'btn btn-default' %>
 <% end %>

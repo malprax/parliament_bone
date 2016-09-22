@@ -9,7 +9,10 @@ class FractionsController < ApplicationController
 
   # GET /fractions/1
   # GET /fractions/1.json
-  def show
+  def shows
+    @fraction = Fraction.find(params[:id])
+    @fractions = Fraction.all
+    @member_fractions = @fraction.member_fractions
   end
 
   # GET /fractions/new
@@ -69,6 +72,6 @@ class FractionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fraction_params
-      params.require(:fraction).permit(:name)
+      params.require(:fraction).permit(:name, :parliament_id)
     end
 end
