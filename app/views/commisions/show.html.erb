@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-8">
 
-      <h3 class="lead"><%= @commision.name.upcase %>&nbsp;&nbsp;<%= link_to 'Tambah Anggota', new_member_commision_path, class:'btn btn-success' %></h3>
+      <h3 class="lead"><%= @commision.name.upcase %>&nbsp;&nbsp;<%= link_to 'Edit', edit_commision_path(@commision), class: 'btn btn-warning' %></h3>
       <table class='table table-hover table-striped'>
         <tr>
           <th>Nama</th>
@@ -16,14 +16,6 @@
         </tr>
       </table>
       <br />
-
-
-
-
-      <%= link_to 'Edit', edit_commision_path(@commision), class: 'btn btn-warning' %>&nbsp;&nbsp;
-      <%= link_to 'Kembali', member_commisions_path, class: 'btn btn-default' %>
-
-
     </div>
     <div class="col-sm-4 col-md-4">
       <%= render 'shared/komisi_panel' %>

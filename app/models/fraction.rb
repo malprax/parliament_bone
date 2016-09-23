@@ -9,6 +9,6 @@
 #
 
 class Fraction < ActiveRecord::Base
-  has_many :member_fractions
+  has_many :member_fractions, dependent: :destroy
 
 end

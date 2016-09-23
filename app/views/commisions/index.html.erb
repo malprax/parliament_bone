@@ -4,32 +4,29 @@
         <div class='col-sm-6 col-md-6'>
           <h3 class="lead">Daftar Komisi DPRD&nbsp;&nbsp;<%= link_to 'Buat Komisi', new_commision_path, class: 'btn btn-default' %></h3>
           <% @commisions.each do |c| %>
-          <div class='panel panel-default'>
-            <div class='panel-heading'>
-              <h3 class='panel-title'><%= c.name.upcase %></h3>
+            <% if c.member_commisions.present? %>
+            <div class='panel panel-default'>
+              <div class='panel-heading'>
+                <h3 class='panel-title'><%= c.name.upcase %></h3>
+              </div>
+              <div class='panel-body'>
+                <table class='table table-hover table-stripped'>
+                    <tr>
+                      <th>Nama</th>
+                      <th>Jabatan</th>
+                    </tr>
+                    <tr>
+                      <% c.member_commisions.each do |member|  %>
+                      <td><%= member.parliament.name %></td>
+                      <td><%= member.structural.name %></td>
+                      <% end %>
+                    </tr>
+                </table>
+              </div>
             </div>
-            <div class='panel-body'>
-              <table class='table table-hover table-stripped'>
-
-                  <tr>
-                    <th>Nama</th>
-                    <th>Jabatan</th>
-                  </tr>
-                  <tr>
-                    <% c.member_commisions.each do |member|  %>
-                    <td><%= member.parliament.name %></td>
-                    <td><%= member.structural.name %></td>
-                    <% end %>
-                  </tr>
-
-              </table>
-
-            </div>
-          </div>
+            <% end %>
           <% end %>
-
           <br>
-
         </div>
         <div class='col-sm-4 col-md-4'>
           <%= render 'shared/komisi_panel' %>

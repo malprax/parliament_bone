@@ -9,6 +9,6 @@
 #
 
 class Commision < ActiveRecord::Base
-  has_many :member_commisions
+  has_many :member_commisions, dependent: :destroy
   # validates_presence_of :name
 end

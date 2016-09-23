@@ -1,9 +1,11 @@
 <h3 class='lead'>Fraksi</h3>
 <ul class="list-group">
-  <% @fractions.each do |fraction| %>
-  <li class="list-group-item"><%= link_to fraction.name.upcase, fraction_path(fraction.id) %></li>
+  <% @fractions.each do |f| %>
+    <% if f.member_fractions.present? %>
+      <li class="list-group-item"><%= link_to f.name.upcase, fraction_path(f.id) %></li>
+    <% end %>
   <% end %>
 </ul>
 <% if params[:controller] == 'fractions' && params[:action] == 'show' %>
-<%= link_to 'SEMUA FRAKSI', fractions_path, class:'btn btn-default' %>
+  <%= link_to 'SEMUA FRAKSI', fractions_path, class:'btn btn-default' %>
 <% end %>

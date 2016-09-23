@@ -1,26 +1,36 @@
 <div class="container">
   <div class="row">
-    <div class="well">
-      <h3 class="lead">Daftar Fraksi <%= link_to 'Buat Fraksi', new_fraction_path, class: "btn btn-default" %> </h1>
-
-      <table class="table table-hover table-striped">
-        <thead>
-          <tr>
-            <th>Nama</th>
-            <th colspan="1"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @fractions.each do |fraction| %>
-            <tr>
-              <td><%= link_to fraction.name.titleize, fraction if fraction %></td>
-              <td><%= link_to 'Edit', edit_fraction_path(fraction), class: 'btn btn-warning' %>&nbsp; &nbsp;<%= link_to 'Hapus', fraction, method: :delete, data: { confirm: 'Anda Yakin Hapus?' }, class: 'btn btn-danger' %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <br>
-    </div>
+      <% if @fractions.present? %>
+          <div class='col-sm-6 col-md-6'>
+              <h3 class="lead">Daftar Fraksi <%= link_to 'Buat Fraksi', new_fraction_path, class: "btn btn-default" %> </h1>
+            <% @fractions.each do |f| %>
+              <% if f.member_fractions.present? %>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h3 class='panel-title'><%= f.name.upcase %></h3>
+                  </div>
+                  <div class='panel-body'>
+                    <table class='table table-hover table-stripped'>
+                        <tr>
+                          <th>Nama</th>
+                          <th>Jabatan</th>
+                        </tr>
+                        <% f.member_fractions.each do |member|  %>
+                        <tr>
+                          <td><%= member.parliament.name %></td>
+                          <td><%= member.structural.name %></td>
+                        </tr>
+                        <% end %>
+                    </table>
+                  </div>
+                </div>
+              <% end %>
+            <% end %>
+            <br>
+          </div>
+          <div class='col-sm-4 col-md-4'>
+            <%= render 'shared/fraksi_panel' %>
+          </div>
+      <% end %>
   </div>
 </div>
