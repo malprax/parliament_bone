@@ -21,5 +21,8 @@
     <div class="col-sm-4 col-md-4">
       <%= render 'shared/fraksi_panel' %>
     </div>
+    <% if current_user %>
+    <%= link_to 'Kembali', atur_fraksi_fractions_path, class:'btn btn-default' %>
+    <% end %>
   </div>
 </div>

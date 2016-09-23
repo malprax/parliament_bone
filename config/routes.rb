@@ -3,7 +3,12 @@ Rails.application.routes.draw do
   resources :member_fractions
   resources :structurals
   resources :member_commisions
-  resources :fractions
+  resources :fractions do
+    collection do
+    get 'atur_fraksi' => 'fractions#atur_fraksi', as: :atur_fraksi
+    end
+  end
+
   namespace :admin do
       resources :parliaments
   end
