@@ -9,12 +9,14 @@
           <th>Anggota</th>
         </tr>
         <tr>
-          <%# @member_fractions.each do |member_fraction| %>
-          <td><%#= member_fraction.parliament.name rescue nil %></td>
-          <td><%#= member_fraction.structural.name.titleize  rescue nil %></td>
-          <%# end %>
+          <% @member_fractions.each do |member_fraction| %>
+          <td><%= member_fraction.parliament.name  %></td>
+          <td><%= member_fraction.structural.name.titleize   %></td>
+          <% end %>
         </tr>
       </table>
+
+
       <br />
 
 

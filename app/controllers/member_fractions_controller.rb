@@ -5,6 +5,7 @@ class MemberFractionsController < ApplicationController
   # GET /member_fractions.json
   def index
     @member_fractions = MemberFraction.all
+    @fractions = Fraction.all
   end
 
   # GET /member_fractions/1

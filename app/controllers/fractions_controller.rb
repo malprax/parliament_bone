@@ -9,7 +9,7 @@ class FractionsController < ApplicationController
 
   # GET /fractions/1
   # GET /fractions/1.json
-  def shows
+  def show
     @fraction = Fraction.find(params[:id])
     @fractions = Fraction.all
     @member_fractions = @fraction.member_fractions
