@@ -9,5 +9,13 @@
 #
 
 class Structural < ActiveRecord::Base
+  before_validation :downcase_name
+  validates_presence_of :name
+
+  private
+  def downcase_name
+    #code
+    self.name = name.downcase if name.present?
+  end
   has_many :member_commisions
 end
